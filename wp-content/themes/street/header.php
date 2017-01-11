@@ -15,48 +15,27 @@
 
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap-theme.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/fontsocialico.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css" media="all" />
 <!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
         <link rel="stylesheet" type="text/css" href="https://streetguardian.info/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow-settings.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />
+<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slider.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/tablisting.css" media="all" />
         <!--<link rel="stylesheet" type="text/css" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive/yt-responsive.css" type="text/css" />
-        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/colors/orange.css" type="text/css" />
-        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
-        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />
-        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/cloudzoom.css" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" media="all" />
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
+<!--        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
+        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />
+        <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />
-
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.noconflict.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.uniform.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.jqtransform.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/yt-script.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/yt-extend.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cloud-zoom.1.0.2.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jcarousellite_1.0.1.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.easing.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.cookie.min.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.accordion_snyderplace.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/respond.src.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.fancybox.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/fancybox-buttons.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bundle.js"></script>
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.session.js"></script>
-        
-         <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.plugins.min.js"></script>
-         <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.revolution.js"></script>
-         <link href='https://fonts.googleapis.com/css?family=Share' rel='stylesheet' type='text/css' />
+        <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
     </head>
 
 
@@ -77,8 +56,8 @@
                                 <div class="header_slogan">Street Guardian - Who's watching!</div>			</div>
                             <div class="zen-lang-currency">
                                 <div class="header-user">
-                                    <!--<span class="icon-user"></span>-->
-                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <span class="icon-user"></span>
+                               
                                     <ul class="links">
                                         <li class="first" ><a href="https://streetguardian.info/customer/account/" title="My Account" >My Account</a></li>
                                         <li  >	<div class="header-wishlist">    	
@@ -117,51 +96,6 @@
                                     </li>
                                 </ul>			</div>
                             <div class="header-content-right col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                <div class="header-login">
-                                    <span class="icon-login"></span>
-
-                                    <span class="header-welcome">Welcome,</span>
-                                    <a class="login" title="Log In" href="javascript:void(0)"> Login</a>
-                                    <div class="login-quick" style="display: none;">
-                                        <div class="block block-login-top">
-                                            <form action="https://streetguardian.info/customer/account/loginPost/" method="post">
-                                                <input name="form_key" type="hidden" value="GlKipbpiYAzwJI4S" />
-                                                <div class="block-content">
-                                                    <input type="text" name="login[username]" id="mini-login" class="input-text" value="User name" onFocus="if (this.value != '') {
-                                                                this.value = '';
-                                                            }"onBlur="if (this.value == '') {
-                                                                        this.value = 'User name';
-                                                                    }" />
-                                                    <input type="password" name="login[password]" id="mini-password" class="input-text" value="........." onFocus="if (this.value != '') {
-                                                                this.value = '';
-                                                            }"onBlur="if (this.value == '') {
-                                                                        this.value = '.........';
-                                                                    }"  />
-                                                    <div class="actions">
-                                                        <div class="chk-remember"><input id="chk_remember" type="checkbox" name="rememberme" value="remember" /> 
-                                                            <label for="chk_remember">Remember</label> </div>
-                                                        <div class="submit-login">
-                                                            <input type="submit" class="submit-repl" name="submit" value="Login" />
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="more-actions">
-                                                        <a href="https://streetguardian.info/customer/account/forgotpassword/" class="f-left">Forgot your password</a>	
-                                                        <a href="https://streetguardian.info//customer/account/create/" title="Create an Account" class="button-reg">Sign up for a free account</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>						
-                                <div class="header-cart">
-                                    <div class="block mini-cartpro sm-cartpro">
-                                        <div class="block-title">
-                                            <span class="empty">Cart is empty </span>
-                                            <span class="i-cart"></span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -252,70 +186,6 @@
                                     </div>
                                 </div>
                                 <div class="yt-menu">
-                                    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/sm/megamenu/js/jsmart.noconflict.js"></script><script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/sm/megamenu/js/sm-megamenu.js"></script>	<script type="text/javascript">
-// <![CDATA[ 
-                                                        $jsmart.fn.getOffsetRight = function () {	//this is object that need get offset right	
-                                                            offset_right = $jsmart(this).offset().left + $jsmart(this).outerWidth();
-                                                            return offset_right;
-                                                        }
-                                                        $jsmart.fn.getOffsetLeft = function () {	//this is object that need get offset right	
-                                                            offset_right = $jsmart(this).offset().left;
-                                                            return offset_right;
-                                                        }
-                                                        $jsmart.fn.setOffsetElement = function () {
-//this is div child of LI.sm_megamenu_lv1 object that need "set offset left for div has align:left" and "set offset right for div has align:right"
-
-                                                            offset_right_class_sm_megamenu_menu = $jsmart('#sm_megamenu_menu5874d414849dc').getOffsetRight();
-                                                            offset_left_class_sm_megamenu_menu = $jsmart('#sm_megamenu_menu5874d414849dc').getOffsetLeft();
-
-                                                            if (!$jsmart(this).hasClass('sm_megamenu_align_right')) {
-                                                                px_exceed_right_side_menu = $jsmart(this).offsetParent().offset().left + $jsmart(this).outerWidth() - offset_right_class_sm_megamenu_menu;
-                                                                if (px_exceed_right_side_menu > 0) {
-                                                                    $jsmart(this).css({'left': -px_exceed_right_side_menu});
-                                                                } else {
-                                                                    //$jsmart(this).css({'left':'0'});
-                                                                }
-                                                            } else {
-                                                                px_exceed_left_side_menu = $jsmart(this).offsetParent().getOffsetRight() - $jsmart(this).outerWidth() - offset_left_class_sm_megamenu_menu;
-                                                                if (px_exceed_left_side_menu > 0) {
-                                                                    $jsmart(this).css({'left': 'auto', 'right': '0px'});
-                                                                } else {
-                                                                    $jsmart(this).css({'left': 'auto', 'right': px_exceed_left_side_menu});
-                                                                }
-                                                            }
-                                                        }
-
-                                                        $jsmart(function () {	//init
-                                                            effect_duration = 200;
-                                                            if (effect_duration <= 0) {
-                                                                effect_duration = 800;
-                                                            }
-                                                            $jsmart('#sm_megamenu_menu5874d414849dc li.sm_megamenu_lv1').children('div').each(function (i, e) {
-                                                                $jsmart(e).setOffsetElement();
-                                                            });
-                                                            if ($jsmart('#sm_megamenu_menu5874d414849dc li.sm_megamenu_lv1').parent().hasClass('sm-megamenu-hover')) {
-                                                                $jsmart('#sm_megamenu_menu5874d414849dc li.sm_megamenu_lv1').children('div').css({'display': 'block'});
-                                                                $height_slide = $jsmart('#sm_megamenu_menu5874d414849dc li.sm_megamenu_lv1 .slider-height').children('.sm_megamenu_content').height();
-                                                                $height_slide = $height_slide / 2;
-                                                                $jsmart('#sm_megamenu_menu5874d414849dc li.sm_megamenu_lv1').children('div').css({'display': 'none'});
-                                                            }
-                                                            $jsmart('#sm_megamenu_menu5874d414849dc li.sm_megamenu_lv1').hover(function (e) {
-                                                                $jsmart(this).children('div').stop(true, true).delay(200).slideDown(effect_duration);
-                                                                $jsmart('.container-slider.menu-slider .vpo-wrap .vp').css({'height': '345px'});
-                                                            }, function (e) {
-                                                                $jsmart(this).children('div').stop(true, true).delay(0).slideUp(effect_duration);
-                                                            });
-                                                        });
-
-
-// ]]> 
-                                    </script>
-
-
-                                    <link media="all" href="https://streetguardian.info/skin/frontend/default/sm_zen/sm/megamenu/css/horizontal/black/megamenu.css" type="text/css" rel="stylesheet">
-
-
-
                                     <div class="sm_megamenu_wrapper_horizontal_menu sambar" id="sm_megamenu_menu5874d414849dc" data-sam="19710569911484051476">
                                         <div class="sambar-inner">
                                             <a class="btn-sambar" data-sapi="collapse" href="#sm_megamenu_menu5874d414849dc">
@@ -327,7 +197,7 @@
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_drop parent   sm_megamenu_actived">
                                                     <a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_actived sm_megamenu_top_actived" href="https://streetguardian.info/home"  id="sm_megamenu_130">
-                                                        <span style="background: url('https://streetguardian.info/media/wysiwyg/icon-home_1.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
+                                                        <span style="background: url('<?php echo get_template_directory_uri() ?>/images/icon-home.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">Home</span>
 
 
@@ -427,7 +297,7 @@
                                                                         <li class="fields">
                                                                             <div class="field">
                                                                                 <div class="input-box">
-                                                                                    <span class="fa fa-user"></span>
+                                                                                    <span class="icon-user"></span>
                                                                                     <input name="name" id="name" title="Your name" onfocus="if (this.value == 'Your name...')
                                                                                                 this.value = '';" onblur="if (this.value == '')
                                                                                                             this.value = 'Your name...';" value="Your name..." class="input-text required-entry" type="text" />
@@ -435,7 +305,7 @@
                                                                             </div>
                                                                             <div class="field">
                                                                                 <div class="input-box">
-                                                                                    <span class="fa fa-envelope"></span>
+                                                                                    <span class="icon-envelope"></span>
                                                                                     <input name="email" id="email" title="Your email" onfocus="if (this.value == 'Your email...')
                                                                                                 this.value = '';" onblur="if (this.value == '')
                                                                                                             this.value = 'Your email...';" value="Your email..." class="input-text required-entry validate-email" type="text" />
@@ -444,7 +314,7 @@
                                                                         </li>
                                                                         <li>
                                                                             <div class="input-box">
-                                                                                <span class="fa fa-list"></span>
+                                                                                <span class="icon-list"></span>
                                                                                 <input name="subject" id="subject" title="Title" onfocus="if (this.value == 'Subject')
                                                                                             this.value = '';" onblur="if (this.value == '')
                                                                                                         this.value = 'Subject';" value="Subject" class="input-text" type="text" />  
@@ -464,11 +334,6 @@
                                                                     <button type="submit" title="Send Email" class="button"><span><span>Send Email</span></span></button>
                                                                 </div>
                                                             </form>
-                                                            <script type="text/javascript">
-                                                                //<![CDATA[
-//                                                                var contactForm = new VarienForm('contactForm', true);
-                                                                //]]>
-                                                            </script>
                                                             <div class="contact-info-under">
                                                                 &nbsp;</div>
                                                         </div>
@@ -486,8 +351,6 @@
                                         </div>
                                     </div>
                                     <!--End Module-->
-
-
                                 </div>
                             </div>
                             <div class="top-search">
@@ -500,45 +363,13 @@
                                         </button>	
                                         <input id="search" type="text" name="q" value="" class="input-text" />
                                         <div id="search_autocomplete" class="search-autocomplete"></div>
-                                        <script type="text/javascript">
-                                            //<![CDATA[
-//                                            var searchForm = new Varien.searchForm('search_mini_form', 'search', 'Enter your keyword...');
-//                                            searchForm.initAutocomplete('https://streetguardian.info/catalogsearch/ajax/suggest/', 'search_autocomplete');
-                                            //]]>
-                                        </script>
+
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
                 <a id="yt-totop" href="#" title="Go to Top"></a>
-                <script type="text/javascript">
-                    jQuery(document).ready(function ($) {
-                        $("#yt-totop").hide();
-                        $(function () {
-                            var wh = $(window).height();
-                            var whtml = $(document).height();
-                            $(window).scroll(function () {
-                                if ($(this).scrollTop() > whtml / 10) {
-                                    $('#yt-totop').fadeIn();
-                                } else {
-                                    $('#yt-totop').fadeOut();
-                                }
-                            });
-                            $('#yt-totop').click(function () {
-                                $('body,html').animate({
-                                    scrollTop: 0
-                                }, 800);
-                                return false;
-                            });
-                        });
-                    });
-                </script>
-
-
-
             </div>
             <!-- END: Header -->

@@ -679,7 +679,7 @@ label.required em {
 
 /*------------------------back to top---------------------------------*/
 #yt-totop {
-    background: url("../images/up-arrow.png") no-repeat scroll center center #333;
+    background: url("../../images/up-arrow.png") no-repeat scroll center center #333;
     bottom: 30px;
     height: 45px;
     overflow: hidden;
