@@ -1,40 +1,52 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: dean
- * Date: 11/24/16
- * Time: 4:52 PM
- */
 
-function register_cpt_portfolio() {
+add_action('init', 'product_register');
+
+function product_register() {
+    global $themename;
     $labels = array(
-        'name' => _x( 'Portfolio', 'ponta' ),
-        'singular_name' => _x( 'Portfolio', 'ponta' ),
-        'menu_name' => _x( 'Portfolio', 'ponta' ),
+        'name' => __('Product', 'post type general name', $themename),
+        'singular_name' => __('Product Item', 'post type singular name', $themename),
+        'add_new' => __('Add New', 'Product', $themename),
+        'add_new_item' => __('Add New Product', $themename),
+        'edit_item' => __('Edit Product', $themename),
+        'new_item' => __('New Product', $themename),
+        'view_item' => __('View Product', $themename),
+        'search_items' => __('Search Product', $themename),
+        'not_found' => __('No Product have been added yet', $themename),
+        'not_found_in_trash' => __('Nothing found in Product', $themename),
+        'parent_item_colon' => ''
     );
+
     $args = array(
         'labels' => $labels,
-        'hierarchical' => true,
-        'description' => 'portfolio',
-        'supports' => array( 'title', 'author', 'custom-fields' ),
-        'public' => false,
+        'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
-        'menu_position' => 5,
-        'menu_icon' => 'dashicons-building',
-        'show_in_nav_menus' => true,
-        'publicly_queryable' => true,
-        'exclude_from_search' => true,
+        'show_in_nav_menus' => false,
+        'rewrite' => false,
+        'supports' => array('title', 'editor', 'thumbnail,excerpt'),
         'has_archive' => true,
-        'query_var' => true,
-        'can_export' => true,
-        'rewrite' => true,
-        'capability_type' => 'post',
-        'capabilities' => array(
-            'create_posts' => 'do_not_allow',
-        ),
-        'map_meta_cap' => false,
     );
-    register_post_type( 'portfolio', $args );
+
+    register_post_type('product', $args);
 }
-add_action( 'init', 'register_cpt_portfolio' );
+
+add_action('init', 'create_product_taxonomies', 0);
+
+function create_product_taxonomies() {
+    register_taxonomy(
+            'product_cat', 'product', array(
+        'labels' => array(
+            'name' => 'Product Categories',
+            'add_new_item' => 'Add New Category',
+            'new_item_name' => "New Type Category"
+        ),
+        'show_ui' => true,
+        'show_tagcloud' => true,
+        'show_admin_column' => true,
+        'hierarchical' => true,
+        'sort' => 1,
+            )
+    );
+}

@@ -18,24 +18,25 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/fontsocialico.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css" media="all" />
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow-settings.css" media="all" />
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slider.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/tablisting.css" media="all" />
-        <!--<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
-
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive/yt-responsive.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
-<!--        <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />
-        <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />
         <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
+        <!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
+                <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
+        <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
+         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
+        <!--<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
+
+<!--<link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
+<!--<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />-->
+        <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" media="all" />-->
+
     </head>
 
 
@@ -57,7 +58,7 @@
                             <div class="zen-lang-currency">
                                 <div class="header-user">
                                     <span class="icon-user"></span>
-                               
+
                                     <ul class="links">
                                         <li class="first" ><a href="<?php echo get_site_url() ?>/customer/account/" title="My Account" >My Account</a></li>
                                         <li  >	<div class="header-wishlist">    	

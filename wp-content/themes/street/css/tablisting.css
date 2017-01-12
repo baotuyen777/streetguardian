@@ -14,7 +14,7 @@
 .yt-tab-listing .respl-items-container .respl-items-inner{margin:0;padding:0;width:100%;float:left;margin-bottom:10px;}
 .yt-tab-listing .respl-items-container .respl-items-selected{display:inline-block;}
 .yt-tab-listing .respl-items-container .respl-item-wrap{margin:0;padding:0;opacity:0;filter:alpha(opacity = 0);}
-.yt-tab-listing .respl-items-container .respl-items .respl-item{float:left;margin-bottom:25px;opacity:0;filter:alpha(opacity = 0);padding-left:30px;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-sizing:border-box;}
+.yt-tab-listing .respl-items-container .respl-items .respl-item{float:left;margin-bottom:25px;opacity:1;filter:alpha(opacity = 0);padding-left:30px;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-sizing:border-box;}
 .yt-tab-listing .respl-items-container .respl-items .respl-item .item-inner .item-image{width:100%;overflow:hidden;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-sizing:border-box;position:relative;border:1px solid #E9E9E9;direction:ltr;}
 .yt-tab-listing .respl-items-container .respl-items .respl-item .item-inner .item-image img{width:100%;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-sizing:border-box;opacity:1;filter:alpha(opacity = 100);}
 .yt-tab-listing .respl-items-container .respl-items .respl-item .item-inner .item-image img:hover{width:100%;}
