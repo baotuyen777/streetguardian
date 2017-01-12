@@ -57,238 +57,51 @@ get_header();
                                 <div class="respl-items-container"><!--Begin Items-->
                                     <div class="respl-items  respl-items-selected respl-items-loaded items-category-created_at  respl00-4 respl01-4 respl02-3 respl03-2 respl04-2" >
                                         <div class="respl-items-inner">
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/32gb_v3_f.jpg"  alt="SG9665GC V3 FULL HD" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/535/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/535/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/535/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
+                                            <?php
+                                            $args = array(
+                                                'post_type' => 'product',
+                                            );
+                                            $the_query = new WP_Query($args);
+                                            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
+                                                    ?>
+                                                    <div class="respl-item">
+                                                        <div class="item-inner">
+                                                            <div class="item-image">
+                                                                <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
+                                                                    <!--<img src="<?php echo get_template_directory_uri() ?>/images/product/32gb_v3_f.jpg"  alt="SG9665GC V3 FULL HD" />-->
+                                                                    <?php the_post_thumbnail('post-thumbnail') ?>
+                                                                </a>
+                                                                <div class="item-addto-wrap">
+                                                                    <div class="item-addcart">
+                                                                        <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/535/form_key/GlKipbpiYAzwJI4S/')">
+                                                                            Add to Cart						</a>
+                                                                    </div>
+                                                                    <div class="item-wishlist">
+                                                                        <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/535/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                    </div>
+                                                                    <div class="item-compare">
+                                                                        <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/535/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                    </div>
+                                                                </div>	
 
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
-                                                                SG9665GC V3 FULL HD					</a>
+                                                            </div>
+                                                            <div class="item-info">
+                                                                <div class="item-title ">
+                                                                    <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
+                                                                        <?php the_title() ?>				
+                                                                    </a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-128-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="SG9665GC V3 FULL HD" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/534/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/534/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/534/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/sg9665gv-v3-128-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
-                                                                SG9665GC V3 FULL HD					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1 clr2"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-64-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="SG9665GC V3 FULL HD" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/533/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/533/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/533/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/sg9665gv-v3-64-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
-                                                                SG9665GC V3 FULL HD					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1 clr3"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts64gusdxc10v.html"  onclick="javascript: return true" title="TS64GUSDXC10V" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS64GUSDXC10V" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/532/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/532/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/532/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/ts64gusdxc10v.html"  onclick="javascript: return true"  title="TS64GUSDXC10V" >
-                                                                TS64GUSDXC10V					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1 clr2 clr4"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts128gusdu1.html"  onclick="javascript: return true" title="TS128GUSDU1" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS128GUSDU1" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/531/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/531/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/531/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/ts128gusdu1.html"  onclick="javascript: return true"  title="TS128GUSDU1" >
-                                                                TS128GUSDU1					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1 clr5"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts64gusdu1.html"  onclick="javascript: return true" title="TS64GUSDU1" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS64GUSDU1" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/530/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/530/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/530/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/ts64gusdu1.html"  onclick="javascript: return true"  title="TS64GUSDU1" >
-                                                                TS64GUSDU1					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1 clr2 clr3 clr6"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts32gusdu1.html"  onclick="javascript: return true" title="TS32GUSDU1" >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS32GUSDU1" />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/529/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/529/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/529/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/ts32gusdu1.html"  onclick="javascript: return true"  title="TS32GUSDU1" >
-                                                                TS32GUSDU1					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1"></div>
-                                            <div class="respl-item">
-                                                <div class="item-inner">
-                                                    <div class="item-image">
-                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665xs-full-hd-dvr.html"  onclick="javascript: return true" title="SG9665XS - FULL HD " >
-                                                            <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="SG9665XS - FULL HD " />
-                                                        </a>
-                                                        <div class="item-addto-wrap">
-                                                            <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/528/form_key/GlKipbpiYAzwJI4S/')">
-                                                                    Add to Cart						</a>
-                                                            </div>
-                                                            <div class="item-wishlist">
-                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/528/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
-                                                            </div>
-                                                            <div class="item-compare">
-                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/528/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
-                                                            </div>
-                                                        </div>	
-
-                                                    </div>
-                                                    <div class="item-info">
-                                                        <div class="item-title ">
-                                                            <a href="<?php echo get_site_url() ?>/sg9665xs-full-hd-dvr.html"  onclick="javascript: return true"  title="SG9665XS - FULL HD " >
-                                                                SG9665XS - FULL HD 					</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="clr1 clr2 clr4"></div>
+                                                    <div class="clr1"></div>
+                                                    <?php
+                                                endwhile;
+                                                wp_reset_postdata();
+                                            else :
+                                                ?>
+                                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                                            <?php endif; ?>
                                         </div>
                                         <div class="respl-loadmore " data-active-content=".items-category-created_at" 
                                              data-categoryid="" data-orderid="created_at" data-rl_start="8" 
@@ -359,7 +172,7 @@ get_header();
                                 </div>
                             </div>
                         </div>
-                        	
+
                         <div id="container_slider_17865154081484051477" class="container-slider brand-slider">
                             <div class="brand-slider-header">
                                 <div class="title-header page-title-slider">
@@ -380,7 +193,7 @@ get_header();
                                                     <div class="item-img item-height">
                                                         <div class="item-img-info">
                                                             <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/aptina.jpg"  alt="Aptina" />	
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/aptina.jpg"  alt="Aptina" />	
                                                             </a>
                                                         </div>
                                                     </div>						
@@ -389,7 +202,7 @@ get_header();
                                                     <div class="item-img item-height">
                                                         <div class="item-img-info">
                                                             <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/cell_power.jpg"  alt="cell_power" />	
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/cell_power.jpg"  alt="cell_power" />	
                                                             </a>
                                                         </div>
                                                     </div>						
@@ -398,48 +211,48 @@ get_header();
                                                     <div class="item-img item-height">
                                                         <div class="item-img-info">
                                                             <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/hynix.jpg"  alt="hynix" />	
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/hynix.jpg"  alt="hynix" />	
                                                             </a>
                                                         </div>
                                                     </div>						
                                                 </div>
                                             </div>
-                                           <div class="item">
-                                                <div class="item-wrap">
-                                                    <div class="item-img item-height">
-                                                        <div class="item-img-info">
-                                                            <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/aptina.jpg"  alt="Aptina" />	
-                                                            </a>
-                                                        </div>
-                                                    </div>						
-                                                </div>
-                                                <div class="item-wrap">
-                                                    <div class="item-img item-height">
-                                                        <div class="item-img-info">
-                                                            <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/cell_power.jpg"  alt="cell_power" />	
-                                                            </a>
-                                                        </div>
-                                                    </div>						
-                                                </div>
-                                                <div class="item-wrap">
-                                                    <div class="item-img item-height">
-                                                        <div class="item-img-info">
-                                                            <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/hynix.jpg"  alt="hynix" />	
-                                                            </a>
-                                                        </div>
-                                                    </div>						
-                                                </div>
-                                            </div>
-                                           
                                             <div class="item">
                                                 <div class="item-wrap">
                                                     <div class="item-img item-height">
                                                         <div class="item-img-info">
                                                             <a href="http://#"  onclick="javascript: return true";>
-                                                                <img  src="<?php echo get_template_directory_uri()?>/images/logo/zoran.jpg"  alt="zoran" />	
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/aptina.jpg"  alt="Aptina" />	
+                                                            </a>
+                                                        </div>
+                                                    </div>						
+                                                </div>
+                                                <div class="item-wrap">
+                                                    <div class="item-img item-height">
+                                                        <div class="item-img-info">
+                                                            <a href="http://#"  onclick="javascript: return true";>
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/cell_power.jpg"  alt="cell_power" />	
+                                                            </a>
+                                                        </div>
+                                                    </div>						
+                                                </div>
+                                                <div class="item-wrap">
+                                                    <div class="item-img item-height">
+                                                        <div class="item-img-info">
+                                                            <a href="http://#"  onclick="javascript: return true";>
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/hynix.jpg"  alt="hynix" />	
+                                                            </a>
+                                                        </div>
+                                                    </div>						
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="item-wrap">
+                                                    <div class="item-img item-height">
+                                                        <div class="item-img-info">
+                                                            <a href="http://#"  onclick="javascript: return true";>
+                                                                <img  src="<?php echo get_template_directory_uri() ?>/images/logo/zoran.jpg"  alt="zoran" />	
                                                             </a>
                                                         </div>
                                                     </div>						

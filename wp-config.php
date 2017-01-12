@@ -78,7 +78,8 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
-
+define( 'WP_AUTO_UPDATE_CORE', false );
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

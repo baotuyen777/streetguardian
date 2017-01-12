@@ -25,7 +25,7 @@ function product_register() {
         'show_in_menu' => true,
         'show_in_nav_menus' => false,
         'rewrite' => false,
-        'supports' => array('title', 'editor', 'thumbnail,excerpt'),
+        'supports' => array('title', 'editor', 'thumbnail','excerpt'),
         'has_archive' => true,
     );
 
