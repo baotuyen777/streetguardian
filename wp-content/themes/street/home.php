@@ -42,7 +42,7 @@ get_header();
                     <div class="std"><div class="no-display">&nbsp;</div></div>		                				        		<div id="yt_main_left" class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
                         <div id="yt_tablisting_17040255591484051477" class="yt-tab-listing first-load">
                             <div class="respl-wrap ">
-                                <div class="respl-tabs-container" data-ajaxurl="https://streetguardian.info/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71"><!--Begin Tabs-->
+                                <div class="respl-tabs-container" data-ajaxurl="<?php echo get_site_url() ?>/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71"><!--Begin Tabs-->
                                     <div class="respl-tabs-wrap">
                                         <ul class="respl-tabs cf">
                                             <li class="respl-tab   tab-sel tab-loaded" data-type="order" config-categoryid="121" data-category-id="created_at" data-order-id="created_at" data-active-content=".items-category-created_at">
@@ -60,26 +60,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/32gb_v3_f.jpg"  alt="SG9665GC V3 FULL HD" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/535/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/535/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/535/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/535/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/535/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/535/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
+                                                            <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
                                                                 SG9665GC V3 FULL HD					</a>
                                                         </div>
                                                     </div>
@@ -89,26 +89,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/sg9665gv-v3-128-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-128-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="SG9665GC V3 FULL HD" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/534/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/534/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/534/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/534/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/534/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/534/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/sg9665gv-v3-128-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
+                                                            <a href="<?php echo get_site_url() ?>/sg9665gv-v3-128-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
                                                                 SG9665GC V3 FULL HD					</a>
                                                         </div>
                                                     </div>
@@ -118,26 +118,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/sg9665gv-v3-64-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-64-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="SG9665GC V3 FULL HD" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/533/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/533/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/533/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/533/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/533/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/533/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/sg9665gv-v3-64-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
+                                                            <a href="<?php echo get_site_url() ?>/sg9665gv-v3-64-cpl.html"  onclick="javascript: return true"  title="SG9665GC V3 FULL HD" >
                                                                 SG9665GC V3 FULL HD					</a>
                                                         </div>
                                                     </div>
@@ -147,26 +147,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/ts64gusdxc10v.html"  onclick="javascript: return true" title="TS64GUSDXC10V" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts64gusdxc10v.html"  onclick="javascript: return true" title="TS64GUSDXC10V" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS64GUSDXC10V" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/532/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/532/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/532/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/532/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/532/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/532/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/ts64gusdxc10v.html"  onclick="javascript: return true"  title="TS64GUSDXC10V" >
+                                                            <a href="<?php echo get_site_url() ?>/ts64gusdxc10v.html"  onclick="javascript: return true"  title="TS64GUSDXC10V" >
                                                                 TS64GUSDXC10V					</a>
                                                         </div>
                                                     </div>
@@ -176,26 +176,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/ts128gusdu1.html"  onclick="javascript: return true" title="TS128GUSDU1" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts128gusdu1.html"  onclick="javascript: return true" title="TS128GUSDU1" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS128GUSDU1" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/531/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/531/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/531/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/531/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/531/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/531/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/ts128gusdu1.html"  onclick="javascript: return true"  title="TS128GUSDU1" >
+                                                            <a href="<?php echo get_site_url() ?>/ts128gusdu1.html"  onclick="javascript: return true"  title="TS128GUSDU1" >
                                                                 TS128GUSDU1					</a>
                                                         </div>
                                                     </div>
@@ -205,26 +205,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/ts64gusdu1.html"  onclick="javascript: return true" title="TS64GUSDU1" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts64gusdu1.html"  onclick="javascript: return true" title="TS64GUSDU1" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS64GUSDU1" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/530/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/530/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/530/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/530/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/530/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/530/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/ts64gusdu1.html"  onclick="javascript: return true"  title="TS64GUSDU1" >
+                                                            <a href="<?php echo get_site_url() ?>/ts64gusdu1.html"  onclick="javascript: return true"  title="TS64GUSDU1" >
                                                                 TS64GUSDU1					</a>
                                                         </div>
                                                     </div>
@@ -234,26 +234,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/ts32gusdu1.html"  onclick="javascript: return true" title="TS32GUSDU1" >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/ts32gusdu1.html"  onclick="javascript: return true" title="TS32GUSDU1" >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="TS32GUSDU1" />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/529/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/529/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/529/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/529/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/529/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/529/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/ts32gusdu1.html"  onclick="javascript: return true"  title="TS32GUSDU1" >
+                                                            <a href="<?php echo get_site_url() ?>/ts32gusdu1.html"  onclick="javascript: return true"  title="TS32GUSDU1" >
                                                                 TS32GUSDU1					</a>
                                                         </div>
                                                     </div>
@@ -263,26 +263,26 @@ get_header();
                                             <div class="respl-item">
                                                 <div class="item-inner">
                                                     <div class="item-image">
-                                                        <a class="rspl-image" href="https://streetguardian.info/sg9665xs-full-hd-dvr.html"  onclick="javascript: return true" title="SG9665XS - FULL HD " >
+                                                        <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665xs-full-hd-dvr.html"  onclick="javascript: return true" title="SG9665XS - FULL HD " >
                                                             <img src="<?php echo get_template_directory_uri() ?>/images/product/128gb_v3_b1_f.jpg"  alt="SG9665XS - FULL HD " />
                                                         </a>
                                                         <div class="item-addto-wrap">
                                                             <div class="item-addcart">
-                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('https://streetguardian.info/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/528/form_key/GlKipbpiYAzwJI4S/')">
+                                                                <a title="Add to Cart" href="javascript:void(0);" onclick="setLocation('<?php echo get_site_url() ?>/checkout/cart/add/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/product/528/form_key/GlKipbpiYAzwJI4S/')">
                                                                     Add to Cart						</a>
                                                             </div>
                                                             <div class="item-wishlist">
-                                                                <a href="https://streetguardian.info/wishlist/index/add/product/528/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
+                                                                <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/528/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a>
                                                             </div>
                                                             <div class="item-compare">
-                                                                <a href="https://streetguardian.info/catalog/product_compare/add/product/528/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
+                                                                <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/528/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>
                                                             </div>
                                                         </div>	
 
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="item-title ">
-                                                            <a href="https://streetguardian.info/sg9665xs-full-hd-dvr.html"  onclick="javascript: return true"  title="SG9665XS - FULL HD " >
+                                                            <a href="<?php echo get_site_url() ?>/sg9665xs-full-hd-dvr.html"  onclick="javascript: return true"  title="SG9665XS - FULL HD " >
                                                                 SG9665XS - FULL HD 					</a>
                                                         </div>
                                                     </div>
@@ -293,7 +293,7 @@ get_header();
                                         <div class="respl-loadmore " data-active-content=".items-category-created_at" 
                                              data-categoryid="" data-orderid="created_at" data-rl_start="8" 
                                              data-rl_total="39" data-rl_allready="All ready" 
-                                             data-ajaxurl="https://streetguardian.info/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71" data-type="order" 
+                                             data-ajaxurl="<?php echo get_site_url() ?>/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71" data-type="order" 
                                              data-rl_load="8" config-categoryid="121" >
                                             <div class="respl-loadmore-btn " 
                                                  data-label="Load More" data-label-load="Loading ..." >
@@ -312,7 +312,7 @@ get_header();
                                         <div class="respl-loadmore " data-active-content=".items-category-most_viewed" 
                                              data-categoryid="" data-orderid="most_viewed" data-rl_start="8" 
                                              data-rl_total="39" data-rl_allready="All ready" 
-                                             data-ajaxurl="https://streetguardian.info/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71" data-type="order" 
+                                             data-ajaxurl="<?php echo get_site_url() ?>/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71" data-type="order" 
                                              data-rl_load="8" config-categoryid="121" >
                                             <div class="respl-loadmore-btn " 
                                                  data-label="Load More" data-label-load="Loading ..." >
@@ -346,7 +346,7 @@ get_header();
                                             <img alt="" src="<?php echo get_template_directory_uri() ?>/images/icon_firmware.png"> 
                                         </div>
                                         <div class="item-lb-title">
-                                            <a href="https://streetguardian.info/whats-new/SG9665GC-firmware/">SG9665GC FirmwareBulletin</a>
+                                            <a href="<?php echo get_site_url() ?>/whats-new/SG9665GC-firmware/">SG9665GC FirmwareBulletin</a>
                                         </div>
                                         <div class="item-lb-date">
                                             <span class="day"> 21</span> 

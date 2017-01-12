@@ -19,19 +19,19 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/fontsocialico.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css" media="all" />
 <!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="https://streetguardian.info/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
+        <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow-settings.css" media="all" />
 <!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slider.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/tablisting.css" media="all" />
-        <!--<link rel="stylesheet" type="text/css" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
+        <!--<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive/yt-responsive.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
-<!--        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
-        <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
+<!--        <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />
         <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" media="all" />-->
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />
@@ -59,13 +59,13 @@
                                     <span class="icon-user"></span>
                                
                                     <ul class="links">
-                                        <li class="first" ><a href="https://streetguardian.info/customer/account/" title="My Account" >My Account</a></li>
+                                        <li class="first" ><a href="<?php echo get_site_url() ?>/customer/account/" title="My Account" >My Account</a></li>
                                         <li  >	<div class="header-wishlist">    	
-                                                <a href="https://streetguardian.info/wishlist/" title="My Wishlist" >Wishlist</a>    </div>
+                                                <a href="<?php echo get_site_url() ?>/wishlist/" title="My Wishlist" >Wishlist</a>    </div>
                                         </li>
-                                        <li ><a href="https://streetguardian.info/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
-                                        <li ><a href="https://streetguardian.info/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
-                                        <li class=" last" ><a href="https://streetguardian.info/customer/account/login/" title="Log In" >Log In</a></li>
+                                        <li ><a href="<?php echo get_site_url() ?>/checkout/cart/" title="My Cart" class="top-link-cart">My Cart</a></li>
+                                        <li ><a href="<?php echo get_site_url() ?>/checkout/" title="Checkout" class="top-link-checkout">Checkout</a></li>
+                                        <li class=" last" ><a href="<?php echo get_site_url() ?>/customer/account/login/" title="Log In" >Log In</a></li>
                                     </ul>
                                 </div>
 
@@ -78,7 +78,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="logo-zen col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                                <a href="https://streetguardian.info/"></a>
+                                <a href="<?php echo get_site_url() ?>/"></a>
                             </div>
                             <div class="header-service col-lg-7 col-md-7 col-sm-9 col-xs-12">
                                 <ul class="header-service-content">
@@ -92,7 +92,7 @@
                                     </li>
                                     <li class="last">
                                         <div class="header-service-title">&nbsp;&nbsp;&nbsp;&nbsp; +61 2 8004 6223</div>
-                                        <div class="header-service-info"><a style="font-weight: bold; color: #f36422;" href="https://streetguardian.info/helpdesk/">Create Support Ticket</a></div>
+                                        <div class="header-service-info"><a style="font-weight: bold; color: #f36422;" href="<?php echo get_site_url() ?>/helpdesk/">Create Support Ticket</a></div>
                                     </li>
                                 </ul>			</div>
                             <div class="header-content-right col-lg-2 col-md-2 col-sm-6 col-xs-12">
@@ -111,74 +111,74 @@
                                     <div id="yt_resmenu_sidebar">
                                         <ul class="nav-menu clearfix">
                                             <li class="nav-home">
-                                                <a class="nav-home" href="https://streetguardian.info/" title="Home"><span>Home</span></a>
+                                                <a class="nav-home" href="<?php echo get_site_url() ?>/" title="Home"><span>Home</span></a>
                                             </li>
                                             <li class="level0 nav-1 parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                <a href="https://streetguardian.info/products">
+                                                <a href="<?php echo get_site_url() ?>/products">
                                                     <span>Products</span>
                                                 </a>
                                                 <ul class="level0">
                                                     <li class="level1 nav-1-1 first parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                        <a href="https://streetguardian.info/products/accessories">
+                                                        <a href="<?php echo get_site_url() ?>/products/accessories">
                                                             <span>Accessories</span>
                                                         </a>
                                                         <ul class="level1">
                                                             <li class="level2 nav-1-1-1 first last">
-                                                                <a href="https://streetguardian.info/products/accessories/power-control-kits">
+                                                                <a href="<?php echo get_site_url() ?>/products/accessories/power-control-kits">
                                                                     <span>Power Control Kits</span>
                                                                 </a>
                                                             </li>
                                                         </ul>
                                                     </li><li class="level1 nav-1-2 parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                        <a href="https://streetguardian.info/products/digital-video-recorders">
+                                                        <a href="<?php echo get_site_url() ?>/products/digital-video-recorders">
                                                             <span>Digital Video Recorders</span>
                                                         </a>
                                                         <ul class="level1">
                                                             <li class="level2 nav-1-2-2 first last">
-                                                                <a href="https://streetguardian.info/products/digital-video-recorders/dash-cams">
+                                                                <a href="<?php echo get_site_url() ?>/products/digital-video-recorders/dash-cams">
                                                                     <span>Dash Cams</span>
                                                                 </a>
                                                             </li>
                                                         </ul>
                                                     </li><li class="level1 nav-1-3 parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                        <a href="https://streetguardian.info/products/safety-view-systems">
+                                                        <a href="<?php echo get_site_url() ?>/products/safety-view-systems">
                                                             <span>Safety View Systems</span>
                                                         </a>
                                                         <ul class="level1">
                                                             <li class="level2 nav-1-3-3 first">
-                                                                <a href="https://streetguardian.info/products/safety-view-systems/reverse-cameras">
+                                                                <a href="<?php echo get_site_url() ?>/products/safety-view-systems/reverse-cameras">
                                                                     <span>Reverse Cameras</span>
                                                                 </a>
                                                             </li><li class="level2 nav-1-3-4 last">
-                                                                <a href="https://streetguardian.info/products/safety-view-systems/monitors">
+                                                                <a href="<?php echo get_site_url() ?>/products/safety-view-systems/monitors">
                                                                     <span>Monitors</span>
                                                                 </a>
                                                             </li>
                                                         </ul>
                                                     </li><li class="level1 nav-1-4 last">
-                                                        <a href="https://streetguardian.info/products/replacement-parts">
+                                                        <a href="<?php echo get_site_url() ?>/products/replacement-parts">
                                                             <span>Replacement Parts</span>
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </li>	    	        <li class="level0 nav-2">
-                                                <a href="https://streetguardian.info/about">
+                                                <a href="<?php echo get_site_url() ?>/about">
                                                     <span>About</span>
                                                 </a>
                                             </li>	    	        <li class="level0 nav-3">
-                                                <a href="https://streetguardian.info/contact">
+                                                <a href="<?php echo get_site_url() ?>/contact">
                                                     <span>Contact</span>
                                                 </a>
                                             </li>	    	        <li class="level0 nav-4">
-                                                <a href="https://streetguardian.info/whats-new">
+                                                <a href="<?php echo get_site_url() ?>/whats-new">
                                                     <span>What's New</span>
                                                 </a>
                                             </li>	    	        <li class="level0 nav-5">
-                                                <a href="https://streetguardian.info/faq">
+                                                <a href="<?php echo get_site_url() ?>/faq">
                                                     <span>FAQ</span>
                                                 </a>
                                             </li>	    	        <li class="level0 nav-6">
-                                                <a href="https://streetguardian.info/support">
+                                                <a href="<?php echo get_site_url() ?>/support">
                                                     <span>Support</span>
                                                 </a>
                                             </li>	    	    </ul>
@@ -196,7 +196,7 @@
                                             <ul class="sm-megamenu-hover sm_megamenu_menu sm_megamenu_menu_black" data-jsapi="on">
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_drop parent   sm_megamenu_actived">
-                                                    <a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_actived sm_megamenu_top_actived" href="https://streetguardian.info/home"  id="sm_megamenu_130">
+                                                    <a class="sm_megamenu_head sm_megamenu_drop sm_megamenu_actived sm_megamenu_top_actived" href="<?php echo get_site_url() ?>/home"  id="sm_megamenu_130">
                                                         <span style="background: url('<?php echo get_template_directory_uri() ?>/images/icon-home.png') no-repeat scroll 0% 50% transparent;" class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">Home</span>
 
@@ -214,29 +214,29 @@
                                                     </a>
                                                     <div class="sm-megamenu-child sm_megamenu_dropdown_2columns ">	
                                                         <div class="sm_megamenu_col_2 sm_megamenu_firstcolumn  sm_megamenu_id99 "><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id148  padding-none"><div class="sm_megamenu_head_item ">	</div><div class="sm_megamenu_col_6 sm_megamenu_firstcolumn  sm_megamenu_id115  padding-none"><div class="sm_megamenu_head_item ">	<div class="sm_megamenu_title"><span class="sm_megamenu_title_lv3">Product Categories</span></div></div><div class="sm_megamenu_content"><ul class="list-sub-custom">
-                                                                            <li><a href="https://streetguardian.info/products/digital-video-recorders"> <span>Digital Video Recorders</span> </a>
+                                                                            <li><a href="<?php echo get_site_url() ?>/products/digital-video-recorders"> <span>Digital Video Recorders</span> </a>
                                                                                 <ul class="list-sub-custom" style="font-size: 60%;">
-                                                                                    <li><a href="https://streetguardian.info/products/digital-video-recorders/dash-cams"> <span>Dash Cams</span> </a></li>
+                                                                                    <li><a href="<?php echo get_site_url() ?>/products/digital-video-recorders/dash-cams"> <span>Dash Cams</span> </a></li>
                                                                                 </ul>
                                                                             </li>
-                                                                            <li><a href="https://streetguardian.info/products/safety-view-systems"> <span>Safety View Systems</span> </a>
+                                                                            <li><a href="<?php echo get_site_url() ?>/products/safety-view-systems"> <span>Safety View Systems</span> </a>
                                                                                 <ul class="list-sub-custom" style="font-size: 60%;">
-                                                                                    <li><a href="https://streetguardian.info/products/safety-view-systems/reverse-cameras"> <span>Reverse Camera</span> </a></li>
-                                                                                    <li><a href="https://streetguardian.info/products/safety-view-systems/monitors"> <span>Monitors</span> </a></li>
+                                                                                    <li><a href="<?php echo get_site_url() ?>/products/safety-view-systems/reverse-cameras"> <span>Reverse Camera</span> </a></li>
+                                                                                    <li><a href="<?php echo get_site_url() ?>/products/safety-view-systems/monitors"> <span>Monitors</span> </a></li>
                                                                                 </ul>
                                                                             </li>
-                                                                            <li><a href="https://streetguardian.info/products/accessories"> <span>Accessories</span> </a>
+                                                                            <li><a href="<?php echo get_site_url() ?>/products/accessories"> <span>Accessories</span> </a>
                                                                                 <ul class="list-sub-custom" style="font-size: 60%;">
-                                                                                    <li><a href="https://streetguardian.info/products/accessories/camera-accessories"> <span>Camera Accessories</span> </a></li>
-                                                                                    <li><a href="https://streetguardian.info/products/accessories/power-control-kits"> <span>Power Control Kits</span> </a></li>
+                                                                                    <li><a href="<?php echo get_site_url() ?>/products/accessories/camera-accessories"> <span>Camera Accessories</span> </a></li>
+                                                                                    <li><a href="<?php echo get_site_url() ?>/products/accessories/power-control-kits"> <span>Power Control Kits</span> </a></li>
                                                                                 </ul>
                                                                             </li>
-                                                                            <li><a href="https://streetguardian.info/products/replacement-parts"> <span>Replacement Parts</span> </a></li>
+                                                                            <li><a href="<?php echo get_site_url() ?>/products/replacement-parts"> <span>Replacement Parts</span> </a></li>
                                                                         </ul></div></div></div></div>												</div>
                                                 </li>
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_nodrop   ">
-                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="https://streetguardian.info/where-to-buy"  id="sm_megamenu_100">
+                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_site_url() ?>/where-to-buy"  id="sm_megamenu_100">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">Where to buy</span>
 
@@ -245,7 +245,7 @@
                                                     </a>
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_nodrop   ">
-                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="https://streetguardian.info/support"  id="sm_megamenu_151">
+                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_site_url() ?>/support"  id="sm_megamenu_151">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">Support</span>
 
@@ -254,7 +254,7 @@
                                                     </a>
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_nodrop   ">
-                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="https://streetguardian.info/faq"  id="sm_megamenu_158">
+                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_site_url() ?>/faq"  id="sm_megamenu_158">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">FAQ</span>
 
@@ -263,7 +263,7 @@
                                                     </a>
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_nodrop   ">
-                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="https://streetguardian.info/about"  id="sm_megamenu_155">
+                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_site_url() ?>/about"  id="sm_megamenu_155">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">About</span>
 
@@ -288,10 +288,10 @@
                                                                     <p class="contact-phone"><label>Tel : </label>+61-2-8004 6223 <label>Mob : </label>+61-419 544 888</p>
                                                                     <!--<p class="contact-email"><label>Email : </label><a href="mailto:info@streetguardian.info">info@streetguardian.info</a></p>-->
                                                                 </div>
-                                                                <div class="contact-map"><!--<div class="contact-map-content"><img src="https://streetguardian.info/media/wysiwyg/bg-map.jpg" alt="" /></div>-->
+                                                                <div class="contact-map"><!--<div class="contact-map-content"><img src="<?php echo get_site_url() ?>/media/wysiwyg/bg-map.jpg" alt="" /></div>-->
                                                                     <div class="contact-map-content"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.740530283916!2d150.961985!3d-33.922077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12be1a4a8226d7%3A0xd1249e5f7271a632!2s10%2F53-55+Gov+Macquarie+Dr%2C+Chipping+Norton+NSW+2170!5e0!3m2!1sen!2sau!4v1423089823253 &amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="320" height="240"></iframe></div>
                                                                 </div></div>
-                                                            <form class="contact-form col-lg-7 col-md-7 col-sm-6 col-xs-12" action="https://streetguardian.info/contacts/index/post/" id="contactForm" method="post">
+                                                            <form class="contact-form col-lg-7 col-md-7 col-sm-6 col-xs-12" action="<?php echo get_site_url() ?>/contacts/index/post/" id="contactForm" method="post">
                                                                 <div class="fieldset">
                                                                     <ul class="form-list">
                                                                         <li class="fields">
@@ -340,7 +340,7 @@
                                                     </div>
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_nodrop  sm_megamenu_right ">
-                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="https://streetguardian.info/whats-new"  id="sm_megamenu_157">
+                                                    <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_site_url() ?>/whats-new"  id="sm_megamenu_157">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
                                                             <span class="sm_megamenu_title">What's New</span>
 
@@ -354,7 +354,7 @@
                                 </div>
                             </div>
                             <div class="top-search">
-                                <form id="search_mini_form" action="https://streetguardian.info/catalogsearch/result/" method="get">
+                                <form id="search_mini_form" action="<?php echo get_site_url() ?>/catalogsearch/result/" method="get">
                                     <div class="form-search">
                                         <button type="submit" title="Search" class="button">
                                             <span class="search-icon">
