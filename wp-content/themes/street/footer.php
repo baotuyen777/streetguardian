@@ -83,7 +83,9 @@
 </div>
 <!-- END: footer -->
 </div>
-
+<script>
+    var ajax_url='<?php echo admin_url()."/admin-ajax.php"?>'
+</script>
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.noconflict.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.uniform.min.js"></script>

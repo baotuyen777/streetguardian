@@ -338,5 +338,78 @@
 //
 //        })('#yt_tablisting_17040255591484051477');
 //    });
-        //end list product
+    //end list product
+
+    //load product
+    // Biến dùng kiểm tra nếu đang gửi ajax thì ko thực hiện gửi thêm
+    var is_busy = false;
+
+// Biến lưu trữ trang hiện tại
+    var page = 0;
+
+// Số record trên mỗi trang
+    var postPerPage = 8;
+
+// Biến lưu trữ rạng thái phân trang 
+    var stopped = false;
+
+    jQuery(document).ready(function ()
+    {
+        // Khi kéo scroll thì xử lý
+        jQuery('#load_more').click(function ()
+        {
+            // Element append nội dung
+            $element = jQuery('#content');
+
+            // ELement hiển thị chữ loadding
+            $button = jQuery(this);
+
+            // Nếu đang gửi ajax thì ngưng
+            if (is_busy == true) {
+                return false;
+            }
+
+            // Tăng số trang lên 1
+            page++;
+
+            // Hiển thị loadding ...
+            $button.html('LOADDING ...');
+
+            // Gửi Ajax
+            jQuery.ajax(
+                    {
+                        type: 'get',
+                        dataType: 'json',
+                        url: ajax_url,
+                        data: {page: page, postPerPage: postPerPage, action: "get_product"},
+                        success: function (result)
+                        {
+                            console.log(page);
+                            var html = '';
+                            jQuery.each(result, function (key, obj) {
+//                                html += '<div>' + obj.ID + ' - ' + obj.post_title + '</div>';
+                                html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> <div class="item-addto-wrap"> <div class="item-addcart"> <a title="Add to Cart" href="javascript:void(0);" onclick=""> Add to Cart</a> </div> <div class="item-wishlist">\n\
+ <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/535/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a> </div> <div class="item-compare">\n\
+ <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/535/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>\n\
+ </div> </div> </div> <div class="item-info">\n\
+ <div class="item-title "> <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
+                            });
+                            $element.append(html)
+                            // Trường hợp hết dữ liệu cho trang kết tiếp
+                            if (result.length < postPerPage)
+                            {
+                                $button.remove();
+                            }
+
+                        }
+                    })
+                    .always(function ()
+                    {
+                        // Sau khi thực hiện xong thì đổi giá trị cho button
+                        $button.html('LOAD MORE');
+                        is_busy = false;
+                    });
+
+        });
+    });
 })();

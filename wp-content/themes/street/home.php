@@ -3,6 +3,7 @@
  * Template Name: home
  */
 get_header();
+
 ?>
 <!-- BEGIN: content -->
 <div id="yt_content" class="yt-content wrap">
@@ -60,16 +61,17 @@ get_header();
                                             <?php
                                             $args = array(
                                                 'post_type' => 'product',
+                                                'posts_per_page'=>8
                                             );
                                             $the_query = new WP_Query($args);
                                             if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
                                                     ?>
-                                                    <div class="respl-item">
+<!--                                                    <div class="respl-item">
                                                         <div class="item-inner">
                                                             <div class="item-image">
                                                                 <a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html"  onclick="javascript: return true" title="SG9665GC V3 FULL HD" >
-                                                                    <!--<img src="<?php echo get_template_directory_uri() ?>/images/product/32gb_v3_f.jpg"  alt="SG9665GC V3 FULL HD" />-->
-                                                                    <?php the_post_thumbnail('post-thumbnail') ?>
+                                                                    <img src="<?php echo get_template_directory_uri() ?>/images/product/32gb_v3_f.jpg"  alt="SG9665GC V3 FULL HD" />
+                                                                    <?php the_post_thumbnail('thumbnail') ?>
                                                                 </a>
                                                                 <div class="item-addto-wrap">
                                                                     <div class="item-addcart">
@@ -94,7 +96,7 @@ get_header();
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="clr1"></div>
+                                                    <div class="clr1"></div>-->
                                                     <?php
                                                 endwhile;
                                                 wp_reset_postdata();
@@ -103,12 +105,13 @@ get_header();
                                                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
                                             <?php endif; ?>
                                         </div>
+                                        <div id="content"></div>
                                         <div class="respl-loadmore " data-active-content=".items-category-created_at" 
                                              data-categoryid="" data-orderid="created_at" data-rl_start="8" 
                                              data-rl_total="39" data-rl_allready="All ready" 
                                              data-ajaxurl="<?php echo get_site_url() ?>/tablisting/index/ajax" data-modid="bd3bdda44c3b5df530d5cd48d5a81f71" data-type="order" 
                                              data-rl_load="8" config-categoryid="121" >
-                                            <div class="respl-loadmore-btn " 
+                                            <div class="respl-loadmore-btn " id="load_more" 
                                                  data-label="Load More" data-label-load="Loading ..." >
                                                 <span class="load-number"  data-more="( 8" 
                                                       data-total="31 )"></span>	
