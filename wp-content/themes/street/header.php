@@ -76,16 +76,16 @@
                   <div class="header-service col-lg-7 col-md-7 col-sm-9 col-xs-12">
                      <ul class="header-service-content">
                         <li class="first">
-                           <div class="header-service-title">Free Shipping</div>
-                           <div class="header-service-info">Australia wide</div>
+                           <div class="header-service-title">Miễn phí vận chuyển</div>
+                           <!--<div class="header-service-info">Australia wide</div>-->
                         </li>
                         <li>
-                           <div class="header-service-title">Available Worldwide</div>
-                           <div class="header-service-info"><a href="/where-to-buy">where to buy</a></div>
+                           <div class="header-service-title">Danh sách đại lý ở việt nam</div>
+                           <!--<div class="header-service-info"><a href="/where-to-buy">where to buy</a></div>-->
                         </li>
                         <li class="last">
-                           <div class="header-service-title">&nbsp;&nbsp;&nbsp;&nbsp; +61 2 8004 6223</div>
-                           <div class="header-service-info"><a style="font-weight: bold; color: #f36422;" href="<?php echo get_site_url() ?>/helpdesk/">Create Support Ticket</a></div>
+                           <div class="header-service-title">&nbsp;&nbsp;&nbsp;&nbsp; 0983 166 104</div>
+                           <div class="header-service-info"><a style="font-weight: bold; color: #f36422;" href="<?php echo get_site_url() ?>/helpdesk/">Nhấn vào đây để chat</a></div>
                         </li>
                      </ul>
                   </div>
@@ -274,7 +274,7 @@
                                     sm_megamenu_lv1 sm_megamenu_nodrop   ">
                                     <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_permalink(PAGE_ABOUTUS) ?>"  id="sm_megamenu_155">
                                     <span class="sm_megamenu_icon sm_megamenu_nodesc">		
-                                    <span class="sm_megamenu_title">About</span>
+                                    <span class="sm_megamenu_title">Về chúng tôi</span>
                                     </span>
                                     </a>
                                  <li class="other-toggle   
@@ -361,8 +361,9 @@
                      </div>
                   </div>
                   <div class="top-search">
-                     <form id="search_mini_form" action="<?php echo get_site_url() ?>/catalogsearch/result/" method="get">
-                        <div class="form-search">
+                     <form id="search_mini_form" action="https://www.google.com/search" method="get" target="_blank">
+                         <input name="sitesearch" type="hidden" value="<?php echo get_site_url()?>">
+                         <div class="form-search">
                            <button type="submit" title="Search" class="button">
                               <span class="search-icon">
                                  <!--span></span-->

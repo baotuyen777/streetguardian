@@ -75,5 +75,8 @@ ul.list-sub-custom ul.list-sub-custom a{color:#F36422;}
     margin-top: -3px !important;
 }
 .sm-megamenu-child{
-     margin-top: -5px !important;
+    margin-top: -5px !important;
+}
+.yt-tab-listing .respl-items-container .respl-items .respl-item .item-inner .item-image:hover{
+    border: 1px solid #F36422;
 }

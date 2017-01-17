@@ -13,13 +13,24 @@ get_header();
                 <div class="dynamicslideshow-container  alway" id="dynamicslideshow_692558041484051476">
                     <div class="dynamicslideshow dynamicslideshow-load">
                         <ul>
-                            <li data-transition="random" data-slotamount="5" data-masterspeed="1000">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/banner1.jpg">
-                            </li><li data-transition="random" data-slotamount="5" data-masterspeed="1000">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/banner2.jpg">
-                            </li><li data-transition="random" data-slotamount="5" data-masterspeed="1000">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/banner3.jpg">
-                            </li>			
+
+                           
+                            <?php
+                            $images = get_field('slider', PAGE_HOME);
+                            
+                            $count = count($images);
+                            if ($images):
+                                $i = 0;
+                                foreach ($images as $image):
+                                    ?>
+                                    <li data-transition="random" data-slotamount="5" data-masterspeed="1000">
+                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />	
+                                    </li>
+                                <?php
+                                endforeach;
+
+                            endif;
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +107,7 @@ get_header();
                         </div>
 
                     </div>
-                    <?php get_sidebar() ?>
+<?php get_sidebar() ?>
                 </div>
             </div>
             <div class="home-under">

@@ -148,24 +148,24 @@
     //list product
 //    jQuery(document).ready(function ($) {
 //        (function (element) {
-//            var $element = $(element),
-//                    $tab = $('.respl-tab', $element),
+//            var jQuery('#content') = $(element),
+//                    $tab = $('.respl-tab', jQuery('#content')),
 //                    $tab_label = $('.respl-tab-label', $tab),
-//                    $tabs = $('.respl-tabs', $element),
+//                    $tabs = $('.respl-tabs', jQuery('#content')),
 //                    ajax_url = $tabs.parents('.respl-tabs-container').attr('data-ajaxurl'),
 //                    rl_moduleid = $tabs.parents('.respl-tabs-container').attr('data-modid'),
-//                    $items_content = $('.respl-items', $element),
+//                    $items_content = $('.respl-items', jQuery('#content')),
 //                    $items_inner = $('.respl-items-inner', $items_content),
-//                    $items_first_active = $('.respl-items-selected', $element),
-//                    $load_more = $('.respl-loadmore', $element),
+//                    $items_first_active = $('.respl-items-selected', jQuery('#content')),
+//                    $load_more = $('.respl-loadmore', jQuery('#content')),
 //                    $btn_loadmore = $('.respl-loadmore-btn', $load_more),
-//                    $select_box = $('.respl-selectbox', $element),
-//                    $tab_label_select = $('.respl-tab-selected', $element);
+//                    $select_box = $('.respl-selectbox', jQuery('#content')),
+//                    $tab_label_select = $('.respl-tab-selected', jQuery('#content'));
 //
 //            enableSelectBoxes();
 //            function enableSelectBoxes() {
-//                $tab_wrap = $('.respl-tabs-wrap', $element),
-//                        $tab_label_select.html($('.respl-tab', $element).filter('.tab-sel').children('.respl-tab-label').html());
+//                $tab_wrap = $('.respl-tabs-wrap', jQuery('#content')),
+//                        $tab_label_select.html($('.respl-tab', jQuery('#content')).filter('.tab-sel').children('.respl-tab-label').html());
 //                if ($(window).innerWidth() <= 479) {
 //                    $tab_wrap.addClass('respl-selectbox');
 //                } else {
@@ -173,20 +173,20 @@
 //                }
 //            }
 //
-//            $('span.respl-tab-selected, span.respl-tab-arrow', $element).click(function () {
+//            $('span.respl-tab-selected, span.respl-tab-arrow', jQuery('#content')).click(function () {
 //
-//                if ($('.respl-tabs', $element).hasClass('respl-open')) {
-//                    $('.respl-tabs', $element).removeClass('respl-open');
+//                if ($('.respl-tabs', jQuery('#content')).hasClass('respl-open')) {
+//                    $('.respl-tabs', jQuery('#content')).removeClass('respl-open');
 //                } else {
-//                    $('.respl-tabs', $element).addClass('respl-open');
+//                    $('.respl-tabs', jQuery('#content')).addClass('respl-open');
 //                }
 //            });
 //
 //            $(window).resize(function () {
 //                if ($(window).innerWidth() <= 479) {
-//                    $('.respl-tabs-wrap', $element).addClass('respl-selectbox');
+//                    $('.respl-tabs-wrap', jQuery('#content')).addClass('respl-selectbox');
 //                } else {
-//                    $('.respl-tabs-wrap', $element).removeClass('respl-selectbox');
+//                    $('.respl-tabs-wrap', jQuery('#content')).removeClass('respl-selectbox');
 //                }
 //            });
 //            function showAnimateItems(el) {
@@ -221,12 +221,12 @@
 //                $this.addClass('tab-sel');
 //                var items_active = $this.attr('data-active-content');
 //                $items_content.removeClass('respl-items-selected');
-//                $(items_active, $element).addClass('respl-items-selected');
+//                $(items_active, jQuery('#content')).addClass('respl-items-selected');
 //                $tab_label_select.html($tab.filter('.tab-sel').children('.respl-tab-label').html());
-//                var $loading = $('.respl-loading', $(items_active, $element));
-//                var loaded = $(items_active, $element).hasClass('respl-items-loaded');
-//                if (!loaded && !$(items_active, $element).hasClass('respl-process')) {
-//                    $(items_active, $element).addClass('respl-process');
+//                var $loading = $('.respl-loading', $(items_active, jQuery('#content')));
+//                var loaded = $(items_active, jQuery('#content')).hasClass('respl-items-loaded');
+//                if (!loaded && !$(items_active, jQuery('#content')).hasClass('respl-process')) {
+//                    $(items_active, jQuery('#content')).addClass('respl-process');
 //                    var category_id = $this.attr('data-category-id');
 //                    var order_id = $this.attr('data-order-id');
 //                    var config_categoryid = $this.attr('config-categoryid');
@@ -246,11 +246,11 @@
 //                        },
 //                        success: function (data) {
 //                            if (data.items_markup != '') {
-//                                $('.respl-items-inner', $(items_active, $element)).html(data.items_markup);
-//                                $(items_active, $element).addClass('respl-items-loaded').removeClass('respl-process');
+//                                $('.respl-items-inner', $(items_active, jQuery('#content'))).html(data.items_markup);
+//                                $(items_active, jQuery('#content')).addClass('respl-items-loaded').removeClass('respl-process');
 //                                $loading.remove();
-//                                showAnimateItems($(items_active, $element));
-//                                updateStatus($(items_active, $element));
+//                                showAnimateItems($(items_active, jQuery('#content')));
+//                                updateStatus($(items_active, jQuery('#content')));
 //                            }
 //                        },
 //                        dataType: 'json'
@@ -258,7 +258,7 @@
 //
 //                } else {
 //                    $('.respl-item', $items_content).removeAttr('style');
-//                    showAnimateItems($(items_active, $element));
+//                    showAnimateItems($(items_active, jQuery('#content')));
 //                }
 //
 //            });
@@ -319,11 +319,11 @@
 //                        },
 //                        success: function (data) {
 //                            if (data.items_markup != '') {
-//                                $(data.items_markup).insertAfter($('.respl-item', $(items_active, $element)).nextAll().last());
+//                                $(data.items_markup).insertAfter($('.respl-item', $(items_active, jQuery('#content'))).nextAll().last());
 //                                $('.respl-image-loading', $this).css({display: 'none'});
 //                                //$this.hide('fast');
-//                                showAnimateItems($(items_active, $element));
-//                                updateStatus($(items_active, $element));
+//                                showAnimateItems($(items_active, jQuery('#content')));
+//                                updateStatus($(items_active, jQuery('#content')));
 //                                $this.css({padding: '6px 20px'});
 //                                //$this.show('slow');
 //                            }
@@ -352,64 +352,53 @@
 
 // Biến lưu trữ rạng thái phân trang 
     var stopped = false;
+    function getProducts() {
+        if (is_busy == true) {
+            return false;
+        }
+        // Tăng số trang lên 1
+        page++;
+        // Hiển thị loadding ...
+        jQuery('#load_more').html('Đang tải ...');
+        // Gửi Ajax
+        jQuery.ajax(
+                {
+                    type: 'get',
+                    dataType: 'json',
+                    url: ajax_url,
+                    data: {page: page, postPerPage: postPerPage, action: "get_product"},
+                    success: function (result)
+                    {
+                        console.log(page);
+                        var html = '';
+                        jQuery.each(result, function (key, obj) {
+//                                html += '<div>' + obj.ID + ' - ' + obj.post_title + '</div>';
+                            html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> \n\
+ </div> <div class="item-info">\n\
+ <div class="item-title "> <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
+                        });
+                        jQuery('#content').append(html)
+                        // Trường hợp hết dữ liệu cho trang kết tiếp
+                        if (result.length < postPerPage)
+                        {
+                            jQuery('#load_more').remove();
+                        }
 
+                    }
+                })
+                .always(function ()
+                {
+                    // Sau khi thực hiện xong thì đổi giá trị cho button
+                    jQuery('#load_more').html('Xem thêm');
+                    is_busy = false;
+                });
+    }
     jQuery(document).ready(function ()
     {
-        // Khi kéo scroll thì xử lý
+        getProducts();
         jQuery('#load_more').click(function ()
         {
-            // Element append nội dung
-            $element = jQuery('#content');
-
-            // ELement hiển thị chữ loadding
-            $button = jQuery(this);
-
-            // Nếu đang gửi ajax thì ngưng
-            if (is_busy == true) {
-                return false;
-            }
-
-            // Tăng số trang lên 1
-            page++;
-
-            // Hiển thị loadding ...
-            $button.html('LOADDING ...');
-
-            // Gửi Ajax
-            jQuery.ajax(
-                    {
-                        type: 'get',
-                        dataType: 'json',
-                        url: ajax_url,
-                        data: {page: page, postPerPage: postPerPage, action: "get_product"},
-                        success: function (result)
-                        {
-                            console.log(page);
-                            var html = '';
-                            jQuery.each(result, function (key, obj) {
-//                                html += '<div>' + obj.ID + ' - ' + obj.post_title + '</div>';
-                                html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> <div class="item-addto-wrap"> <div class="item-addcart"> <a title="Add to Cart" href="javascript:void(0);" onclick=""> Add to Cart</a> </div> <div class="item-wishlist">\n\
- <a href="<?php echo get_site_url() ?>/wishlist/index/add/product/535/form_key/GlKipbpiYAzwJI4S/">Add to Wishlist</a> </div> <div class="item-compare">\n\
- <a href="<?php echo get_site_url() ?>/catalog/product_compare/add/product/535/uenc/aHR0cHM6Ly9zdHJlZXRndWFyZGlhbi5pbmZvLw,,/form_key/GlKipbpiYAzwJI4S/">Add to Compare</a>\n\
- </div> </div> </div> <div class="item-info">\n\
- <div class="item-title "> <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
-                            });
-                            $element.append(html)
-                            // Trường hợp hết dữ liệu cho trang kết tiếp
-                            if (result.length < postPerPage)
-                            {
-                                $button.remove();
-                            }
-
-                        }
-                    })
-                    .always(function ()
-                    {
-                        // Sau khi thực hiện xong thì đổi giá trị cho button
-                        $button.html('LOAD MORE');
-                        is_busy = false;
-                    });
-
+            getProducts();
         });
     });
 })();

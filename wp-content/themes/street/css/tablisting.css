@@ -50,7 +50,7 @@
 .yt-tab-listing .respl-items-container .respl-loadmore{display:block;overflow:hidden;text-align:center;margin:0 auto;margin-left:15px;margin-top:15px;width:100%;text-transform:uppercase;}
 .yt-tab-listing .respl-items .respl-loadmore .respl-loadmore-btn{padding:7px 20px;display:inline-block;color:#FFF;font-size:150%;line-height:135%;cursor:pointer;position:relative;direction:ltr;}
 .yt-tab-listing .respl-items .respl-loadmore .respl-image-loading{display:none;margin-right:10px;vertical-align:middle;position:absolute;top:7px;left:20px;font-size:24px;}
-.yt-tab-listing .respl-items .respl-loadmore .respl-loadmore-btn:before{content:attr(data-label);}
+/*.yt-tab-listing .respl-items .respl-loadmore .respl-loadmore-btn:before{content:attr(data-label);}*/
 .yt-tab-listing .respl-items .respl-loadmore .respl-loadmore-btn.loading:before{content:attr(data-label-load);}
 .yt-tab-listing .respl-items.respl-process .respl-loadmore{display:none;}
 .yt-tab-listing .respl-items .respl-loadmore .load-number:before{content:attr(data-more);display:none;}
