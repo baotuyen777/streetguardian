@@ -373,9 +373,9 @@
                         var html = '';
                         jQuery.each(result, function (key, obj) {
 //                                html += '<div>' + obj.ID + ' - ' + obj.post_title + '</div>';
-                            html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> \n\
+                            html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="'+obj.link+'" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> \n\
  </div> <div class="item-info">\n\
- <div class="item-title "> <a href="<?php echo get_site_url() ?>/sg9665gv-v3-32-cpl.html" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
+ <div class="item-title "> <a href="'+obj.link+'" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
                         });
                         jQuery('#content').append(html)
                         // Trường hợp hết dữ liệu cho trang kết tiếp

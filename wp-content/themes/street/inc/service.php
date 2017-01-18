@@ -14,9 +14,15 @@ function qsoft_get_all_product() {
             $wpdb->prepare("SELECT * FROM wp_posts where post_type='product' "
                     . "and post_status='publish' "
                     . "limit %d, %d ", $start, $postPerPage));
+    $result = array();
+    foreach ($data as $object) {
+        $object->link = get_permalink($object->ID);
+        $result[] = $object;
+    }
+
 //    var_dump($data);
     header('Content-Type: application/json');
-    echo json_encode($data);
+    echo json_encode($result);
     exit();
 }
 
