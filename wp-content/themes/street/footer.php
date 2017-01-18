@@ -53,6 +53,7 @@
 <script>
     var ajax_url = '<?php echo admin_url() . "/admin-ajax.php" ?>'
 </script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.noconflict.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.uniform.min.js"></script>
@@ -64,13 +65,13 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jcarousellite_1.0.1.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.easing.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.cookie.min.js"></script>-->
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.accordion_snyderplace.js"></script>
+<!--
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/respond.src.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.fancybox.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/fancybox-buttons.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bundle.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.session.js"></script>-->
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
+
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.revolution.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/slider.js"></script>

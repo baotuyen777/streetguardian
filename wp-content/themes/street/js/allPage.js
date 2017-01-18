@@ -393,12 +393,15 @@
                     is_busy = false;
                 });
     }
-    jQuery(document).ready(function ()
-    {
+    jQuery(document).ready(function (){
         getProducts();
         jQuery('#load_more').click(function ()
         {
             getProducts();
         });
+    });
+    jQuery('.abc_accordion_title').on('click',function(e){
+        e.preventDefault();
+        jQuery(this).parents('.abc_accordion_wrapper').find('.abc_accordion_content').slideToggle('slow');
     });
 })();
