@@ -1,6 +1,6 @@
 <?php
 
-show_admin_bar(true);
+show_admin_bar(false);
 add_theme_support('post-thumbnails');
 define('THEME_PATH', get_template_directory());
 
@@ -15,6 +15,6 @@ register_nav_menus(
 //                'footer' => __('Footer Menu')
         )
 );
-
-
+add_image_size('product-slide', 87, 87, true);
+add_image_size('product-slide-active', 373, 373, true);
 

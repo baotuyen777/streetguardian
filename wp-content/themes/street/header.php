@@ -24,15 +24,18 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />
         <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
-        <!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
-           <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
-        <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
-           <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
-        <!--<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
-        <!--<link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
-           <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
-        <!--<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />-->
-        <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" media="all" />-->
+        <?php if (1 == 1): ?>
+            <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />
+        <?php endif; ?>
+<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
+   <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
+   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
+<!--<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
+<!--<link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
+   <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
+<!--<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />-->
+        <?php wp_head() ?>
     </head>
 
     <body id="bd" class="sm_zen 14   cms-index-index cms-home">

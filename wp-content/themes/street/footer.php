@@ -54,23 +54,18 @@
     var ajax_url = '<?php echo admin_url() . "/admin-ajax.php" ?>'
 </script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>-->
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.noconflict.js"></script>-->
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.uniform.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.jqtransform.js"></script>-->
 
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/yt-script.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/yt-extend.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cloud-zoom.1.0.2.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jcarousellite_1.0.1.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.easing.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.cookie.min.js"></script>-->
-<!--
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/respond.src.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.fancybox.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/fancybox-buttons.js"></script>-->
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bundle.js"></script>-->
-<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.session.js"></script>-->
+<?php if (1 == 1): ?>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/js/yt-extend.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/js/cloud-zoom.1.0.2.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="https://streetguardian.info/skin/frontend/default/sm_zen/js/fancybox-buttons.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/product.js"></script>
+<?php endif; ?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.revolution.js"></script>
@@ -87,5 +82,6 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=578202858865332";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+<?php wp_footer() ?>
 </body>
 </html>
