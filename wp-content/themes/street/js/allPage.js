@@ -373,9 +373,9 @@
                         var html = '';
                         jQuery.each(result, function (key, obj) {
 //                                html += '<div>' + obj.ID + ' - ' + obj.post_title + '</div>';
-                            html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="'+obj.link+'" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> \n\
+                            html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="' + obj.link + '" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> \n\
  </div> <div class="item-info">\n\
- <div class="item-title "> <a href="'+obj.link+'" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
+ <div class="item-title "> <a href="' + obj.link + '" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
                         });
                         jQuery('#content').append(html)
                         // Trường hợp hết dữ liệu cho trang kết tiếp
@@ -393,15 +393,31 @@
                     is_busy = false;
                 });
     }
-    jQuery(document).ready(function (){
+    jQuery(document).ready(function () {
         getProducts();
         jQuery('#load_more').click(function ()
         {
             getProducts();
         });
     });
-    jQuery('.abc_accordion_title').on('click',function(e){
+    jQuery('.abc_accordion_title').on('click', function (e) {
         e.preventDefault();
         jQuery(this).parents('.abc_accordion_wrapper').find('.abc_accordion_content').slideToggle('slow');
     });
+
+
+
 })();
+
+jQuery(document).ready(function ($) {
+    $('body#bd').append('<div class="yt_ressidebar_screennav"><nav id="yt_screennav"><ul class="siderbar-menu"></ul></nav></div>');
+    $('#yt_screennav ul.siderbar-menu').html($('#yt_resmenu_sidebar ul.nav-menu').html());
+
+    $('#yt-responsivemenu .btn.btn-navbar').click(function () {
+        if ($('body#bd').hasClass('onpen-sidebar')) {
+            $('body#bd').removeClass('onpen-sidebar');
+        } else {
+            $('body#bd').addClass('onpen-sidebar');
+        }
+    });
+});

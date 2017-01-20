@@ -12,6 +12,7 @@ register_nav_menus(
         array(
             'main-menu' => __('Main Menu'),
             'extra-menu' => __('Extra Menu'),
+            'mobile' => __('Mobile Menu'),
 //                'footer' => __('Footer Menu')
         )
 );

@@ -8,7 +8,6 @@
         <meta name="keywords" content="street guardian,dash cams, dash cameras, reverse cameras, security systems" />
         <meta name="robots" content="INDEX,FOLLOW" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900,900i" rel="stylesheet">
         <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" media="all" />
@@ -24,17 +23,10 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />
         <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
-        <?php if (1 == 1): ?>
-            <link rel="stylesheet" href="https://streetguardian.info/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
+        <?php if (is_singular('product')):?>
+            <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/jquery.fancybox.css" type="text/css" />
         <?php endif; ?>
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/basicproducts.css" media="all" />
-   <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/sm/cartpro/css/cartpro.css" media="all" />-->
-<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider.css" media="all" />
-   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/extraslider-css3.css" media="all" />-->
-<!--<link rel="stylesheet" type="text/css" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/print.css" media="print" />-->
-<!--<link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox-1.3.4.css" type="text/css" />
-   <link rel="stylesheet" href="<?php echo get_site_url() ?>/skin/frontend/default/sm_zen/css/jquery.fancybox.css" type="text/css" />-->
-<!--<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/cloudzoom.css" type="text/css" />-->
         <?php wp_head() ?>
     </head>
 
@@ -109,90 +101,7 @@
                                     <button type="button" class="btn btn-navbar"><i class="icon-reorder"></i>
                                     </button>
                                     <div id="yt_resmenu_sidebar">
-                                        <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
-                                        <ul class="nav-menu clearfix">
-                                            <li class="nav-home">
-                                                <a class="nav-home" href="<?php echo get_site_url() ?>/" title="Home"><span>Home</span></a>
-                                            </li>
-                                            <li class="level0 nav-1 parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                <a href="<?php echo get_site_url() ?>/products">
-                                                    <span>Products</span>
-                                                </a>
-                                                <ul class="level0">
-                                                    <li class="level1 nav-1-1 first parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                        <a href="<?php echo get_site_url() ?>/products/accessories">
-                                                            <span>Accessories</span>
-                                                        </a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-1-1-1 first last">
-                                                                <a href="<?php echo get_site_url() ?>/products/accessories/power-control-kits">
-                                                                    <span>Power Control Kits</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-1-2 parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                        <a href="<?php echo get_site_url() ?>/products/digital-video-recorders">
-                                                            <span>Digital Video Recorders</span>
-                                                        </a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-1-2-2 first last">
-                                                                <a href="<?php echo get_site_url() ?>/products/digital-video-recorders/dash-cams">
-                                                                    <span>Dash Cams</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-1-3 parent" onmouseover="toggleMenu(this, 1)" onmouseout="toggleMenu(this, 0)">
-                                                        <a href="<?php echo get_site_url() ?>/products/safety-view-systems">
-                                                            <span>Safety View Systems</span>
-                                                        </a>
-                                                        <ul class="level1">
-                                                            <li class="level2 nav-1-3-3 first">
-                                                                <a href="<?php echo get_site_url() ?>/products/safety-view-systems/reverse-cameras">
-                                                                    <span>Reverse Cameras</span>
-                                                                </a>
-                                                            </li>
-                                                            <li class="level2 nav-1-3-4 last">
-                                                                <a href="<?php echo get_site_url() ?>/products/safety-view-systems/monitors">
-                                                                    <span>Monitors</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="level1 nav-1-4 last">
-                                                        <a href="<?php echo get_site_url() ?>/products/replacement-parts">
-                                                            <span>Replacement Parts</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="level0 nav-2">
-                                                <a href="<?php echo get_site_url() ?>/about">
-                                                    <span>About</span>
-                                                </a>
-                                            </li>
-                                            <li class="level0 nav-3">
-                                                <a href="<?php echo get_site_url() ?>/contact">
-                                                    <span>Contact</span>
-                                                </a>
-                                            </li>
-                                            <li class="level0 nav-4">
-                                                <a href="<?php echo get_site_url() ?>/whats-new">
-                                                    <span>What's New</span>
-                                                </a>
-                                            </li>
-                                            <li class="level0 nav-5">
-                                                <a href="<?php echo get_site_url() ?>/faq">
-                                                    <span>FAQ</span>
-                                                </a>
-                                            </li>
-                                            <li class="level0 nav-6">
-                                                <a href="<?php echo get_site_url() ?>/support">
-                                                    <span>Support</span>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <?php wp_nav_menu(array('theme_location' => 'mobile','menu_class'=>'nav-menu clearfix')); ?>
                                     </div>
                                 </div>
                                 <div class="yt-menu">
