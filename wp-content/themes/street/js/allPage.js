@@ -145,267 +145,116 @@
         });
     });
 
-    //list product
-//    jQuery(document).ready(function ($) {
-//        (function (element) {
-//            var jQuery('#content') = $(element),
-//                    $tab = $('.respl-tab', jQuery('#content')),
-//                    $tab_label = $('.respl-tab-label', $tab),
-//                    $tabs = $('.respl-tabs', jQuery('#content')),
-//                    ajax_url = $tabs.parents('.respl-tabs-container').attr('data-ajaxurl'),
-//                    rl_moduleid = $tabs.parents('.respl-tabs-container').attr('data-modid'),
-//                    $items_content = $('.respl-items', jQuery('#content')),
-//                    $items_inner = $('.respl-items-inner', $items_content),
-//                    $items_first_active = $('.respl-items-selected', jQuery('#content')),
-//                    $load_more = $('.respl-loadmore', jQuery('#content')),
-//                    $btn_loadmore = $('.respl-loadmore-btn', $load_more),
-//                    $select_box = $('.respl-selectbox', jQuery('#content')),
-//                    $tab_label_select = $('.respl-tab-selected', jQuery('#content'));
-//
-//            enableSelectBoxes();
-//            function enableSelectBoxes() {
-//                $tab_wrap = $('.respl-tabs-wrap', jQuery('#content')),
-//                        $tab_label_select.html($('.respl-tab', jQuery('#content')).filter('.tab-sel').children('.respl-tab-label').html());
-//                if ($(window).innerWidth() <= 479) {
-//                    $tab_wrap.addClass('respl-selectbox');
-//                } else {
-//                    $tab_wrap.removeClass('respl-selectbox');
-//                }
-//            }
-//
-//            $('span.respl-tab-selected, span.respl-tab-arrow', jQuery('#content')).click(function () {
-//
-//                if ($('.respl-tabs', jQuery('#content')).hasClass('respl-open')) {
-//                    $('.respl-tabs', jQuery('#content')).removeClass('respl-open');
-//                } else {
-//                    $('.respl-tabs', jQuery('#content')).addClass('respl-open');
-//                }
-//            });
-//
-//            $(window).resize(function () {
-//                if ($(window).innerWidth() <= 479) {
-//                    $('.respl-tabs-wrap', jQuery('#content')).addClass('respl-selectbox');
-//                } else {
-//                    $('.respl-tabs-wrap', jQuery('#content')).removeClass('respl-selectbox');
-//                }
-//            });
-//            function showAnimateItems(el) {
-//                var $_items = $('.respl-item', el), delay = 0, nub = 0;
-//                $('.respl-loadmore-btn', el).fadeOut('fast');
-//                $_items.each(function () {
-//                    nub++;
-//                    $(this).delay(delay).animate({
-//                        opacity: 1,
-//                        filter: 'alpha(opacity = 100)'
-//                    }, {
-//                        delay: 100
-//                    });
-//                    delay += 100;
-//                    if (nub == $_items.length) {
-//                        $('.respl-loadmore-btn', el).fadeIn(delay);
-//                    }
-//                });
-//            }
-//
-//            showAnimateItems($items_first_active);
-//
-//            //$tab.on('click.tab', function(){
-//            $tab.click(function () {
-//                var $this = $(this);
-//                if ($this.hasClass('tab-sel'))
-//                    return false;
-//                if ($this.parents('.respl-tabs').hasClass('respl-open')) {
-//                    $this.parents('.respl-tabs').removeClass('respl-open');
-//                }
-//                $tab.removeClass('tab-sel');
-//                $this.addClass('tab-sel');
-//                var items_active = $this.attr('data-active-content');
-//                $items_content.removeClass('respl-items-selected');
-//                $(items_active, jQuery('#content')).addClass('respl-items-selected');
-//                $tab_label_select.html($tab.filter('.tab-sel').children('.respl-tab-label').html());
-//                var $loading = $('.respl-loading', $(items_active, jQuery('#content')));
-//                var loaded = $(items_active, jQuery('#content')).hasClass('respl-items-loaded');
-//                if (!loaded && !$(items_active, jQuery('#content')).hasClass('respl-process')) {
-//                    $(items_active, jQuery('#content')).addClass('respl-process');
-//                    var category_id = $this.attr('data-category-id');
-//                    var order_id = $this.attr('data-order-id');
-//                    var config_categoryid = $this.attr('config-categoryid');
-//                    var data_type = $this.attr('data-type');
-//                    $loading.show();
-//                    $.ajax({
-//                        type: 'POST',
-//                        url: ajax_url,
-//                        data: {
-//                            sm_module_id: rl_moduleid,
-//                            is_ajax: 1,
-//                            ajax_tablisting_start: 0,
-//                            tab_cat_id: category_id,
-//                            order_id: order_id,
-//                            config_categoryid: config_categoryid,
-//                            data_type: data_type
-//                        },
-//                        success: function (data) {
-//                            if (data.items_markup != '') {
-//                                $('.respl-items-inner', $(items_active, jQuery('#content'))).html(data.items_markup);
-//                                $(items_active, jQuery('#content')).addClass('respl-items-loaded').removeClass('respl-process');
-//                                $loading.remove();
-//                                showAnimateItems($(items_active, jQuery('#content')));
-//                                updateStatus($(items_active, jQuery('#content')));
-//                            }
-//                        },
-//                        dataType: 'json'
-//                    });
-//
-//                } else {
-//                    $('.respl-item', $items_content).removeAttr('style');
-//                    showAnimateItems($(items_active, jQuery('#content')));
-//                }
-//
-//            });
-//
-//            function updateStatus($el) {
-//                $('.respl-loadmore-btn', $el).removeClass('loading');
-//                var countitem = $('.respl-item', $el).length;
-//                $('.respl-image-loading', $el).css({display: 'none'});
-//                $('.respl-loadmore-btn', $el).parent().attr('data-rl_start', countitem);
-//                var rl_total = $('.respl-loadmore-btn', $el).parent().attr('data-rl_total');
-//                var rl_load = $('.respl-loadmore-btn', $el).parent().attr('data-rl_load');
-//                var rl_allready = $('.respl-loadmore-btn', $el).parent().attr('data-rl_allready');
-//                if (countitem < rl_total) {
-//                    $('.load-number', $el).attr('data-total', (rl_total - countitem + ' )'));
-//                    if ((rl_total - countitem) < rl_load) {
-//                        $('.load-number', $el).attr('data-more', '( ' + (rl_total - countitem));
-//                    }
-//                }
-//
-//                if (countitem == rl_total) {
-//                    $('.respl-loadmore-btn', $el).addClass('loaded');
-//                    $('.load-number', $el).css({display: 'none'});
-//                    $('.respl-image-loading', $el).css({display: 'none'});
-//                    $('.respl-loadmore-btn', $el).attr('data-label', rl_allready);
-//                    $('.respl-loadmore-btn', $el).removeClass('loading');
-//                }
-//            }
-//
-//
-//            $btn_loadmore.on('click.loadmore', function () {
-//                var $this = $(this);
-//                if ($this.hasClass('loaded') || $this.hasClass('loading')) {
-//                    return false;
-//                } else {
-//                    $this.addClass('loading');
-//                    $this.css({padding: '6px 20px 6px 50px'});
-//                    $('.respl-image-loading', $this).css({display: 'inline-block'});
-//                    var rl_start = $this.parent().attr('data-rl_start'),
-//                            rl_moduleid = $this.parent().attr('data-modid'),
-//                            rl_ajaxurl = $this.parent().attr('data-ajaxurl'),
-//                            category_id = $this.parent().attr('data-categoryid'),
-//                            config_categoryid = $this.parent().attr('config-categoryid'),
-//                            data_type = $this.parent().attr('data-type');
-//                    order_id = $this.parent().attr('data-orderid'),
-//                            items_active = $this.parent().attr('data-active-content');
-//
-//                    $.ajax({
-//                        type: 'POST',
-//                        url: rl_ajaxurl,
-//                        data: {
-//                            sm_module_id: rl_moduleid,
-//                            is_ajax: 1,
-//                            ajax_tablisting_start: rl_start,
-//                            tab_cat_id: category_id,
-//                            order_id: order_id,
-//                            config_categoryid: config_categoryid,
-//                            data_type: data_type
-//                        },
-//                        success: function (data) {
-//                            if (data.items_markup != '') {
-//                                $(data.items_markup).insertAfter($('.respl-item', $(items_active, jQuery('#content'))).nextAll().last());
-//                                $('.respl-image-loading', $this).css({display: 'none'});
-//                                //$this.hide('fast');
-//                                showAnimateItems($(items_active, jQuery('#content')));
-//                                updateStatus($(items_active, jQuery('#content')));
-//                                $this.css({padding: '6px 20px'});
-//                                //$this.show('slow');
-//                            }
-//                        },
-//                        dataType: 'json'
-//
-//                    });
-//                }
-//                return false;
-//
-//            });
-//
-//        })('#yt_tablisting_17040255591484051477');
-//    });
-    //end list product
+
 
     //load product
     // Biến dùng kiểm tra nếu đang gửi ajax thì ko thực hiện gửi thêm
     var is_busy = false;
-
-// Biến lưu trữ trang hiện tại
     var page = 0;
 
-// Số record trên mỗi trang
-    var postPerPage = 8;
-
-// Biến lưu trữ rạng thái phân trang 
-    var stopped = false;
     function getProducts() {
         if (is_busy == true) {
             return false;
         }
-        // Tăng số trang lên 1
         page++;
-        // Hiển thị loadding ...
-        jQuery('#load_more').html('Đang tải ...');
-        // Gửi Ajax
-        jQuery.ajax(
-                {
-                    type: 'get',
-                    dataType: 'json',
-                    url: ajax_url,
-                    data: {page: page, postPerPage: postPerPage, action: "get_product"},
-                    success: function (result)
-                    {
-                        console.log(page);
-                        var html = '';
-                        jQuery.each(result, function (key, obj) {
-//                                html += '<div>' + obj.ID + ' - ' + obj.post_title + '</div>';
-                            html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="' + obj.link + '" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > <img src="http://localhost/streetguardian/wp-content/uploads/2017/01/sg89upn_main-170x260.jpg" alt="SG9665GC V3 FULL HD" /> </a> \n\
+        var postPerPage = 8;
+        jQuery('#load_more_product').html('Đang tải ...');
+        jQuery.ajax({
+            type: 'get',
+            dataType: 'json',
+            url: ajax_url,
+            data: {page: page, postPerPage: postPerPage, action: "get_product"},
+            success: function (result) {
+                console.log(page);
+                var html = '';
+                jQuery.each(result, function (key, obj) {
+                    html += '<div class="respl-item"> <div class="item-inner"><div class="item-image"><a class="rspl-image" href="' + obj.link + '" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > \n\
+<img src="' + obj.image + '" alt="' + obj.post_title + '" /> </a> \n\
  </div> <div class="item-info">\n\
  <div class="item-title "> <a href="' + obj.link + '" onclick="javascript: return true" title="SG9665GC V3 FULL HD" > ' + obj.post_title + ' </a> </div> </div> </div> </div> <div class="clr1"></div>';
-                        });
-                        jQuery('#content').append(html)
-                        // Trường hợp hết dữ liệu cho trang kết tiếp
-                        if (result.length < postPerPage)
-                        {
-                            jQuery('#load_more').remove();
-                        }
-
-                    }
-                })
-                .always(function ()
-                {
-                    // Sau khi thực hiện xong thì đổi giá trị cho button
-                    jQuery('#load_more').html('Xem thêm');
-                    is_busy = false;
                 });
+                jQuery('#tab-product-content .content').append(html)
+                // Trường hợp hết dữ liệu cho trang kết tiếp
+                if (result.length < postPerPage) {
+                    jQuery('#load_more_product').remove();
+                }
+            }
+        }).done(function () {
+            console.log(1231);
+            // Sau khi thực hiện xong thì đổi giá trị cho button
+            jQuery('#load_more_product').html('Xem thêm');
+            is_busy = false;
+        });
     }
     jQuery(document).ready(function () {
         getProducts();
-        jQuery('#load_more').click(function ()
-        {
+        jQuery('.respl-tab').on('click', function () {
+            jQuery('.respl-tab').removeClass('tab-sel');
+
+            jQuery(this).addClass('tab-sel');
+        });
+        jQuery('#load_more_product').click(function () {
             getProducts();
         });
-    });
-    jQuery('.abc_accordion_title').on('click', function (e) {
-        e.preventDefault();
-        jQuery(this).parents('.abc_accordion_wrapper').find('.abc_accordion_content').slideToggle('slow');
+        jQuery('#load_more_post').click(function () {
+            getPost();
+        });
+        //switch content
+        jQuery('#tab-post').on('click', function () {
+            jQuery('.respl-items-container .tab-content').removeClass('respl-items-selected');
+            jQuery('#tab-post-content').addClass('respl-items-selected');
+            if (isLoadedPost === false) {
+                getPost();
+                isLoadedPost = true;
+            }
+        });
+
+        jQuery('#tab-product').on('click', function () {
+            jQuery('.respl-items-container .tab-content').removeClass('respl-items-selected');
+            jQuery('#tab-product-content').addClass('respl-items-selected');
+
+        });
     });
 
+    var isLoadedPost = false;
+    var pagePost = 0;
+    function getPost() {
+        console.log(is_busy);
+        if (is_busy == true) {
+            return false;
+        }
+        pagePost++;
+        var postPerPage = 2;
+        jQuery('#load_more_post').html('Đang tải ...');
+        jQuery.ajax({
+            type: 'get',
+            dataType: 'json',
+            url: ajax_url,
+            data: {page: pagePost, postPerPage: postPerPage, action: "get_post"},
+            success: function (result) {
+                console.log(pagePost);
+                var html = '';
+                jQuery.each(result, function (key, obj) {
+                    html += '<article class="row " >'
+                            + '<a class="col-sm-3" href="' + obj.link + '">'
+                            + '<img src="' + obj.image + '" alt="' + obj.post_title + '" /> </a> '
+                            + '<div class="col-sm-9">'
+                            + '<h2><a href="' + obj.link + '">' + obj.post_title + '</a></h2>'
+                            + '<p>' + obj.post_excerpt + '</p>'
+                            + '</div></article>';
+                });
 
+                jQuery('#tab-post-content .content').append(html);
+                // Trường hợp hết dữ liệu cho trang kết tiếp
+                if (result.length < postPerPage) {
+                    jQuery('#load_more_post').remove();
+                }
+            }
+        }).always(function () {
+            jQuery('.load_more').html('Xem thêm');
+            is_busy = false;
+        });
+    }
 
 })();
 
@@ -421,3 +270,18 @@ jQuery(document).ready(function ($) {
         }
     });
 });
+//tab product single
+jQuery('.abc_accordion_title').on('click', function (e) {
+    e.preventDefault();
+    jQuery(this).parents('.abc_accordion_wrapper').find('.abc_accordion_content').slideToggle('slow');
+});
+//chat
+function popitup(url) {
+    newwindow = window.open(url, 'name', 'height=500,width=320');
+    if (window.focus) {
+        newwindow.focus();
+    }
+    return false;
+}
+
+

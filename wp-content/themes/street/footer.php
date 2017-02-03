@@ -39,7 +39,7 @@
                     <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 yt-copyright">
                         <strong>ABN:</strong> 74 142 014 935 . Copyright &copy; StreetGuardian. Site developed and maintained by <a href="https://www.facebook.com/baotuyen666">DavidBui</a>. &nbsp;&nbsp;            	</div>
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 yt-payment">
-                        <div style="text-align: right; margin-bottom: 5px;"><a href="/">Home</a> | <a href="terms-conditions">Terms &amp; Conditions | </a><a href="privacy-policy">Privacy Policy</a></div>
+                        <!--<div style="text-align: right; margin-bottom: 5px;"><a href="/">Home</a> | <a href="terms-conditions">Terms &amp; Conditions | </a><a href="privacy-policy">Privacy Policy</a></div>-->
 
                     </div>
                 </div>
@@ -50,14 +50,15 @@
 </div>
 <!-- END: footer -->
 </div>
+<div id="fb-root"></div>
 <script>
     var ajax_url = '<?php echo admin_url() . "admin-ajax.php" ?>'
 </script>
 
-
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
 <?php if (is_singular('product')): ?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
-   
+
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/yt-extend.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cloud-zoom.1.0.2.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jcarousellite_1.0.1.js"></script>
@@ -66,21 +67,13 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/product.js"></script>
 <?php endif; ?>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.plugins.min.js"></script>
+<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.themepunch.revolution.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/slider.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/sm-megamenu.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/allPage.js"></script>
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id))
-            return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=578202858865332";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/sm-megamenu.js"></script>-->
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
+<!--<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/allPage.js"></script>-->
+
 <?php wp_footer() ?>
 </body>
 </html>

@@ -1,10 +1,10 @@
-@import url("docs.css");
+/*@import url("docs.css");*/
 @import url("addons.css");
 @import url("theme.css");
 @import url("menu.css");
-@import url("css3.css");
+/*@import url("css3.css");
 @import url("colorbox.css");
-@import url("widgets.css");
+@import url("widgets.css");*/
 
 #yt-responsivemenu {
     display: none;

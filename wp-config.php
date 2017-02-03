@@ -20,6 +20,8 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true); //Added by WP-Cache Manager
+define( 'WPCACHEHOME', 'D:\xampp\htdocs\streetguardian\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'streetguardian');
 
 /** MySQL database username */
@@ -64,7 +66,8 @@ define('NONCE_SALT',       'KY}DhZBJ-=ON:(ABlPxU38AJzx>kmtZ=e&jE$;[h{|UFE=QIwA@A
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
-
+define('WP_HOME','http://localhost/streetguardian/');
+define('WP_SITEURL','http://localhost/streetguardian/');
 /**
  * For developers: WordPress debugging mode.
  *

@@ -108,25 +108,29 @@ get_header();
                                 </div>
                                 <div class="yt-detail-right col-lg-8 col-md-8 col-sm-7 col-xs-12">
                                     <form>
+
                                         <div class="product-shop">
                                             <h1 class="product-name">
                                                 <a  title="<?php the_title() ?>"><?php the_title() ?></a>
                                             </h1>
                                             <div class="product-next-pre">
-                                                <a class="product-pre" title="Sản phẩm trước" href="sg9665gv-v3-32-cpl.html">Sản phẩm trước</a>
-                                                <a class="product-next" title="Sản phẩm sau" href="sgzc12sg-pro-series-camera.html">Sản phẩm sau</a>
+                                                 <?php previous_post_link( '%link', 'Sản phẩm sau', TRUE, ' ', 'product_cat' ); ?>
+                                                <?php next_post_link( '%link', 'Sản phẩm trước', TRUE, ' ', 'product_cat' ); ?>
+                                              
                                             </div>
                                             <div class="product-review">
                                             </div>
                                             <div class="price-box">
                                                 <span class="regular-price" id="product-price-493">
                                                     <span class="price-label">Giá tham khảo: </span
-
-                                                    <span class="price"><?php the_field('price') ?>$</span>                                    
+                                                    <?php
+                                                    $price = null != (get_field('price')) ? number_format(get_field('price')) . ' đ' : 'Liên hệ';
+                                                    ?>
+                                                    <span class="price"><?php echo $price ?></span>                                    
                                                 </span>
                                             </div>
                                             <?php
-                                            if (get_field('availability' == 'Out stock')):
+                                            if (get_field('availability') == 'Out stock'):
                                                 ?>
                                                 <p class="availability out-of-stock">Trạng thái: <span>instock</span></p>
                                             <?php else: ?>
@@ -150,7 +154,7 @@ get_header();
                                                 <?php
                                                 if (have_posts()): while (have_posts()): the_post();
                                                         the_content();
-                                                    endwhile;
+                                                endwhile;
                                                 endif;
                                                 ?>
                                             </div>

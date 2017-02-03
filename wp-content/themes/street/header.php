@@ -3,28 +3,28 @@
     <head>
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Street Guardian - Who's Watching!</title>
+        <title>Street Guardian - Camera hành trình ô tô</title>
         <meta name="description" content="Default Description" />
         <meta name="keywords" content="street guardian,dash cams, dash cameras, reverse cameras, security systems" />
         <meta name="robots" content="INDEX,FOLLOW" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
         <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap-theme.min.css" media="all" />
+ <!--<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap-theme.min.css" media="all" />-->
+        <!--<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/fontsocialico.css" media="all" />-->
+<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/fontsocialico.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css" media="all" />-->
+<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow-settings.css" media="all" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slider.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/tablisting.css" media="all" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive/yt-responsive.css" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />
-        <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />
-        <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.7.2.min.js"></script>
-        <?php if (is_singular('product')):?>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/tablisting.css" media="all" />-->
+       <!--<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive/yt-responsive.css" type="text/css" />-->
+
+<!--        <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />-->
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/main.css" type="text/css" />
+<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />-->
+        <?php if (is_singular('product')): ?>
             <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/jquery.fancybox.css" type="text/css" />
         <?php endif; ?>
         <?php wp_head() ?>
@@ -38,11 +38,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="zen-clock">
-                                <span>
-                                    23:31				</span>
+                                <span><?php echo current_time('H:i'); ?></span>
                             </div>
                             <div class="zen-slogan">
-                                <div class="header_slogan">Street Guardian - Who's watching!</div>
+                                <div class="header_slogan">Street Guardian - Camera hành trình ô tô</div>
                             </div>
                             <div class="zen-lang-currency">
                                 <div class="header-user">
@@ -66,13 +65,13 @@
                 <div class="yt-header-content">
                     <div class="container">
                         <div class="row">
-                            <div class="logo-zen col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="logo-zen col-md-3 col-sm-3 col-xs-12">
                                 <a href="<?php echo get_site_url() ?>/"></a>
                             </div>
-                            <div class="header-service col-lg-7 col-md-7 col-sm-9 col-xs-12">
+                            <div class="header-service col-md-9 col-sm-9 col-xs-12">
                                 <ul class="header-service-content">
                                     <li class="first">
-                                        <div class="header-service-title">Miễn phí vận chuyển</div>
+                                        <div class="header-service-title">Bán hàng trên toàn quốc</div>
                                         <!--<div class="header-service-info">Australia wide</div>-->
                                     </li>
                                     <li>
@@ -84,11 +83,10 @@
                                         <div class="header-service-title">&nbsp;&nbsp;&nbsp;&nbsp; 0983 166 104</div>
                                         <div class="header-service-info">
                                             <a style="font-weight: bold; color: #f36422;" target="_blank"
-                                               href="<?php echo get_permalink(PAGE_FACEBOOK) ?>">Nhấn vào đây để chat</a></div>
+                                               onclick="popitup('<?php echo get_permalink(PAGE_FACEBOOK) ?>')"
+                                               href="#">Nhấn vào đây để chat</a></div>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="header-content-right col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             </div>
                         </div>
                     </div>
@@ -101,7 +99,7 @@
                                     <button type="button" class="btn btn-navbar"><i class="icon-reorder"></i>
                                     </button>
                                     <div id="yt_resmenu_sidebar">
-                                        <?php wp_nav_menu(array('theme_location' => 'mobile','menu_class'=>'nav-menu clearfix')); ?>
+                                        <?php wp_nav_menu(array('theme_location' => 'mobile', 'menu_class' => 'nav-menu clearfix')); ?>
                                     </div>
                                 </div>
                                 <div class="yt-menu">
@@ -140,29 +138,7 @@
                                                                         <div class="sm_megamenu_title"><span class="sm_megamenu_title_lv3">Danh mục sản phẩm</span></div>
                                                                     </div>
                                                                     <div class="sm_megamenu_content">
-                                                                        <ul class="list-sub-custom">
-                                                                            <li>
-                                                                                <a href="<?php echo get_site_url() ?>/products/digital-video-recorders"> <span>Digital Video Recorders</span> </a>
-                                                                                <ul class="list-sub-custom" style="font-size: 60%;">
-                                                                                    <li><a href="<?php echo get_site_url() ?>/products/digital-video-recorders/dash-cams"> <span>Dash Cams</span> </a></li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="<?php echo get_site_url() ?>/products/safety-view-systems"> <span>Safety View Systems</span> </a>
-                                                                                <ul class="list-sub-custom" style="font-size: 60%;">
-                                                                                    <li><a href="<?php echo get_site_url() ?>/products/safety-view-systems/reverse-cameras"> <span>Reverse Camera</span> </a></li>
-                                                                                    <li><a href="<?php echo get_site_url() ?>/products/safety-view-systems/monitors"> <span>Monitors</span> </a></li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="<?php echo get_site_url() ?>/products/accessories"> <span>Accessories</span> </a>
-                                                                                <ul class="list-sub-custom" style="font-size: 60%;">
-                                                                                    <li><a href="<?php echo get_site_url() ?>/products/accessories/camera-accessories"> <span>Camera Accessories</span> </a></li>
-                                                                                    <li><a href="<?php echo get_site_url() ?>/products/accessories/power-control-kits"> <span>Power Control Kits</span> </a></li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li><a href="<?php echo get_site_url() ?>/products/replacement-parts"> <span>Replacement Parts</span> </a></li>
-                                                                        </ul>
+                                                                        <?php wp_nav_menu(array('menu_class' => 'list-sub-custom', 'menu' => 'product')) ?>
                                                                     </div>
                                                                 </div>
                                                             </div>

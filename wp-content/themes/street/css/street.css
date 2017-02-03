@@ -36,7 +36,7 @@ a:hover{color:#686868;}
 .cloud-zoom-big{top:0 !important;left:0 !important;width:100% !important;height:100% !important;}
 .logo-zen{padding:5px 0 !important;}
 .logo-zen a{height:105px !important;}
-.pdf_manual{list-style-image:url('https://cdn1.iconfinder.com/data/icons/fatcow/16/file_extension_pdf.png') !important;margin-bottom:10px;}
+.pdf_manual{list-style-image:url('images/file_extension_pdf.png') !important;margin-bottom:10px;}
 .software_download{list-style-image:url('../images/icons/App-download-manager-icon.png') !important;margin-bottom:10px;}
 .dot_uline{border-bottom:1px dotted lightgrey;background:url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/location-20.png) no-repeat;padding-left:25px;padding-bottom:3px;margin-bottom:10px;}
 .category-support #yt_main h3{font-size:17px;margin-bottom:10px;margin-top:20px;}
@@ -45,7 +45,7 @@ a:hover{color:#686868;}
 .faq .date{display:none;}
 .faq .comments span{display:none;}
 .faq .meta{display:none !important;}
-.map_link{background:url(https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/16/Map-Marker-Marker-Inside-Pink.png) no-repeat;padding-left:18px;margin-left:10px;color:rgb(219, 6, 168);border-left:1px dotted lightgrey;}
+.map_link{background:url(images/Map-Marker-Marker-Inside-Pink.png) no-repeat;padding-left:18px;margin-left:10px;color:rgb(219, 6, 168);border-left:1px dotted lightgrey;}
 .btnDownload{background:url('../images/icons/download.png') no-repeat;padding:16px;}
 .demo_video{background:url('../images/icons/movies.png') no-repeat;padding:16px;}
 .where_to_buy h4{font-size:13px;margin-bottom:7px;font-weight:bold;}
@@ -74,7 +74,7 @@ ul.list-sub-custom ul.list-sub-custom a{color:#F36422;}
     font-family: 'Anton';
     font-style: normal;
     font-weight: 400;
-    src: local('Anton Regular'), local('Anton-Regular'), url(font/anton.woff2) format('woff2');
+    src: local('Anton Regular'), local('Anton-Regular'), url(font/anton.ttf) format('woff2');
     unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
@@ -105,4 +105,38 @@ ul.list-sub-custom ul.list-sub-custom a{color:#F36422;}
 .sm_megamenu_actived >a{
     background-color: #b8b8b8 !important;
     color: white;
+}
+h2{
+    font-size: 20px;
+    line-height: 30px;
+}
+#tab-post-content article{
+    /*border-bottom: 1px solid #ccc;*/
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+#tab-post-content img{
+    border: 1px #ccc solid;
+    width: 100%;
+}
+.pdf_manual,.software_download{
+    margin-left: 20px;
+}
+.toolbar-bottom .toolbar .toolbar-inner .pagination-wrap {
+    float: none; 
+    text-align: center;
+}
+.toolbar .toolbar-inner .pagination-wrap .pagination {
+    border-left: none;
+    float: none; 
+}
+#yt_footer .yt-footer-top .yt-footer-top-wrap {
+   
+     margin-top: 0px; 
+}
+@media(max-width:991px){
+    #tab-post-content article{
+        padding-right: 30px;
+    }
+
 }

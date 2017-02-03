@@ -41,13 +41,18 @@ get_header();
     <div id="yt_main" class="yt-main col-main ">
         <div class="yt_main_inner yt-content-inner">
             <div class="container">
-                <?php
-                if (have_posts()): while (have_posts()): the_post();
-                        the_content();
-                    endwhile;
-                endif;
-                ?>
-
+                <div class="row">
+                    <div class="page-title category-title">
+                        <h1 class="text-center1"><?php the_title() ?></h1>
+                      <hr/>  
+                    </div>
+                    <?php
+                    if (have_posts()): while (have_posts()): the_post();
+                            the_content();
+                        endwhile;
+                    endif;
+                    ?>
+                </div>
             </div>   		                				        				        		</div>
     </div>
 
