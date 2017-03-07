@@ -3,27 +3,14 @@
     <head>
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Street Guardian - Camera hành trình ô tô</title>
-        <meta name="description" content="Default Description" />
+        <title>Street Guardian - Camera hành trình ô tô chất lượng cao</title>
+        <meta name="description" content="Camera hanh trinh, Camera hanh trinh,
+              Camera hanh trinh, Camera hanh trinh Camera hanh trinh Camera hanh trinh, Camera hanh trinh " />
         <meta name="keywords" content="street guardian,dash cams, dash cameras, reverse cameras, security systems" />
         <meta name="robots" content="INDEX,FOLLOW" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
         <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
- <!--<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap-theme.min.css" media="all" />-->
-        <!--<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/fontsocialico.css" media="all" />-->
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/style.css" media="all" />-->
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/sm-dynamicslideshow-settings.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slider.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/tablisting.css" media="all" />-->
-       <!--<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/responsive/yt-responsive.css" type="text/css" />-->
-
-<!--        <link media="all" href="<?php echo get_template_directory_uri() ?>/css/megamenu.css" type="text/css" rel="stylesheet">
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/orange.css" type="text/css" />-->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/main.css" type="text/css" />
-<!--        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/street.css" media="all" />-->
         <?php if (is_singular('product')): ?>
             <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/jquery.fancybox.css" type="text/css" />
         <?php endif; ?>
@@ -162,7 +149,7 @@
                                                     sm_megamenu_lv1 sm_megamenu_nodrop <?php echo $supportActive ?>  ">
                                                     <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_permalink(PAGE_SUPPORT) ?>"  id="sm_megamenu_151">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
-                                                            <span class="sm_megamenu_title">Hỗ trợ</span>
+                                                            <span class="sm_megamenu_title">Phần mềm</span>
                                                         </span>
                                                     </a>
                                                     <?php
@@ -172,7 +159,7 @@
                                                     sm_megamenu_lv1 sm_megamenu_nodrop  <?php echo $faqActive ?> ">
                                                     <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_permalink(PAGE_FAQ) ?>"  id="sm_megamenu_158">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
-                                                            <span class="sm_megamenu_title">FAQ</span>
+                                                            <span class="sm_megamenu_title">Hướng dẫn</span>
                                                         </span>
                                                     </a>
                                                     <?php
@@ -188,7 +175,7 @@
                                                     <?php
                                                     $contactActive = is_page(PAGE_CONTACT) ? 'sm_megamenu_actived' : '';
                                                     ?>
-                                                <li class="other-toggle   
+<!--                                                <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_drop parent  <?php echo $contactActive ?> ">
                                                     <a class="sm_megamenu_head sm_megamenu_drop " href="javascript:void(0)"  id="sm_megamenu_156">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
@@ -206,7 +193,7 @@
                                                             </div>
                                                             <div class="contact-map-wrap col-md-5  col-xs-12">
                                                                 <div class="contact-map">
-                                                                   <!--<div class="contact-map-content"><img src="<?php echo get_site_url() ?>/media/wysiwyg/bg-map.jpg" alt="" /></div>-->
+                                                                   <div class="contact-map-content"><img src="<?php echo get_site_url() ?>/media/wysiwyg/bg-map.jpg" alt="" /></div>
                                                                     <div class="contact-map-content">
                                                                         <?php echo get_field('map', PAGE_CONTACT) ?>
                                                                     </div>
@@ -215,11 +202,12 @@
 
                                                         </div>
                                                     </div>
+                                                </li>-->
                                                 <li class="other-toggle   
                                                     sm_megamenu_lv1 sm_megamenu_nodrop  sm_megamenu_right ">
                                                     <a class="sm_megamenu_head sm_megamenu_nodrop " href="<?php echo get_category_link(CAT_NEWS) ?>"  id="sm_megamenu_157">
                                                         <span class="sm_megamenu_icon sm_megamenu_nodesc">		
-                                                            <span class="sm_megamenu_title">Có gì hot</span>
+                                                            <span class="sm_megamenu_title">Tin tức</span>
                                                         </span>
                                                     </a>
                                             </ul>

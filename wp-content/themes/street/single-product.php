@@ -122,7 +122,7 @@ get_header();
                                             </div>
                                             <div class="price-box">
                                                 <span class="regular-price" id="product-price-493">
-                                                    <span class="price-label">Giá tham khảo: </span
+                                                    <span class="price-label">Giá: </span
                                                     <?php
                                                     $price = null != (get_field('price')) ? number_format(get_field('price')) . ' đ' : 'Liên hệ';
                                                     ?>

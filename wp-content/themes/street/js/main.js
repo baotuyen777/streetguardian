@@ -27,5 +27,6 @@ function popitup(a){return newwindow=window.open(a,"name","height=500,width=320"
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=578202858865332";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+jQuery('.product-image img').attr('height','')
 
 
