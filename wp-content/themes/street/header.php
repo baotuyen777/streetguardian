@@ -4,9 +4,8 @@
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Street Guardian - Camera hành trình ô tô chất lượng cao</title>
-        <meta name="description" content="Camera hanh trinh, Camera hanh trinh,
-              Camera hanh trinh, Camera hanh trinh Camera hanh trinh Camera hanh trinh, Camera hanh trinh " />
-        <meta name="keywords" content="street guardian,dash cams, dash cameras, reverse cameras, security systems" />
+        <meta name="description" content="camera hành trình " />
+        <meta name="keywords" content="camera hành trình, camera hanh trinh, camera hành trình ô tô, camera hành trình hàn quốc, camera hành trình Úc" />
         <meta name="robots" content="INDEX,FOLLOW" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
         <link rel="icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
@@ -28,7 +27,7 @@
                                 <span><?php echo current_time('H:i'); ?></span>
                             </div>
                             <div class="zen-slogan">
-                                <div class="header_slogan">Street Guardian - Camera hành trình ô tô</div>
+                                <div class="header_slogan">Street Guardian - Camera hành trình ô tô số 1 của Úc - Nhà phân phối chính thức và độc quyền</div>
                             </div>
                             <div class="zen-lang-currency">
                                 <div class="header-user">
@@ -58,7 +57,7 @@
                             <div class="header-service col-md-9 col-sm-9 col-xs-12">
                                 <ul class="header-service-content">
                                     <li class="first">
-                                        <div class="header-service-title">Bán hàng trên toàn quốc</div>
+                                        <div class="header-service-title">Camera hành trình số 1 của úc</div>
                                         <!--<div class="header-service-info">Australia wide</div>-->
                                     </li>
                                     <li>

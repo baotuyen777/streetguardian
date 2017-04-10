@@ -36,11 +36,27 @@
         <div class="yt-footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 yt-copyright">
-                        <strong>ABN:</strong> 74 142 014 935 . Copyright &copy; StreetGuardian. Site developed and maintained by <a href="https://www.facebook.com/baotuyen666">DavidBui</a>. &nbsp;&nbsp;            	</div>
+<!--                    <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 yt-copyright">
+                          Copyright &copy; StreetGuardian. Site developed and maintained by <a href="https://www.facebook.com/baotuyen666">DavidBui</a>. &nbsp;&nbsp;            	
+                    </div>-->
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 yt-payment">
                         <!--<div style="text-align: right; margin-bottom: 5px;"><a href="/">Home</a> | <a href="terms-conditions">Terms &amp; Conditions | </a><a href="privacy-policy">Privacy Policy</a></div>-->
-
+                        <p class="hidden">camera hành trình, camera hanh trinh, camera hành trình ô tô, camera hành trình ô tô, bán camera hành trình
+                        camera hành trình giá rẻ,camera hành trình nào tốt,giá camera hành trình, mua camera hành trình,
+                        camera hành trình cho ô tô, ban camera hanh trinh, camera hanh trình, camera hành trinh, camera hành trình visiondrive,
+                        camera hành trình loại nào tốt, nên mua camera hành trình loại nào, camera hanh trinh otosaigon,
+                        camera hanh trinh tot nhat, camera hành trình nào tốt nhất, camera hành trình tốt nhất, tư vấn camera hành trình,
+                        camera hành trình otosaigon, camera hanh trinh 910, camera hành trình tốt nhất hiện nay, camera hành trình hàn quốc,
+                        camera hanh trinh visiondrive, camera hành trình có gps, chọn camera hành trình, camera hành trình otofun, camera hanh trinh han quoc,
+                        camera hành trình tphcm, tự chế camera hành trình, camera hanh trinh otofun, camera hanh trinh oto, camera hanh trinh tren oto,
+                        camera hanh trinh cho oto, camera oto, camera hành trình oto, lap camera hanh trinh cho oto, camera hành trình trên ôtô,
+                        camera xe oto, camera hanh trinh xe hoi, camera hành trình xe hơi, camera giám sát hành trình, camera giám sát hành trình ô tô,
+                        camera giam sat hanh trinh, lắp camera hành trình, lap dat camera hanh trinh, lắp camera hành trình cho ô tô,
+                        lắp đặt camera hành trình, có nên lắp camera hành trình, cách lắp camera hành trình, camera xe hoi, camera ô tô,
+                        hộp đen ô tô, video ô tô, màn hình ô tô, camera hinh trinh, hinh trinh, camera han quoc, camera hàn quốc, camera hanh trinh vietmap,
+                        camera hành trình vietmap, vietmap, vietmap c007, cam hanh trinh, cam hành trình, visiondrive, shop korea,
+                        viet map, hanhtrinhxe, camerahanhtrinh, dvr 910, hop den o to, shopkorea, dvr 910 gps
+                        </p>
                     </div>
                 </div>
             </div>
